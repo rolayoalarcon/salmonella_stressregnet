@@ -1,0 +1,571 @@
+well	drug	conc	concMock	quad	rep	abreviation	wellCode	lib_well	srn_code
+A1	Clotrimazole	150	5	1	r1	Clot	Clot_150_r1	vp2_A1	lp2_L18
+A2	Clotrimazole	150	5	2	r2	Clot	Clot_150_r2	vp2_A2	lp2_L18
+A3	Clotrimazole	120	4	1	r1	Clot	Clot_120_r1	vp2_A3	lp2_L18
+A4	Clotrimazole	120	4	2	r2	Clot	Clot_120_r2	vp2_A4	lp2_L18
+A5	Clotrimazole	90	3	1	r1	Clot	Clot_90_r1	vp2_A5	lp2_L18
+A6	Clotrimazole	90	3	2	r2	Clot	Clot_90_r2	vp2_A6	lp2_L18
+A7	Clotrimazole	60	2	1	r1	Clot	Clot_60_r1	vp2_A7	lp2_L18
+A8	Clotrimazole	60	2	2	r2	Clot	Clot_60_r2	vp2_A8	lp2_L18
+A9	Clotrimazole	30	1	1	r1	Clot	Clot_30_r1	vp2_A9	lp2_L18
+A10	Clotrimazole	30	1	2	r2	Clot	Clot_30_r2	vp2_A10	lp2_L18
+A11	Clotrimazole	0	0	1	r1	Clot	Clot_0_r1	vp2_A11	lp2_L18
+A12	Clotrimazole	0	0	2	r2	Clot	Clot_0_r2	vp2_A12	lp2_L18
+A13	Nefazodone (hydrochloride) 	150	5	1	r1	Nefa	Nefa_150_r1	vp2_A13	lp2_F13
+A14	Nefazodone (hydrochloride) 	150	5	2	r2	Nefa	Nefa_150_r2	vp2_A14	lp2_F13
+A15	Nefazodone (hydrochloride) 	120	4	1	r1	Nefa	Nefa_120_r1	vp2_A15	lp2_F13
+A16	Nefazodone (hydrochloride) 	120	4	2	r2	Nefa	Nefa_120_r2	vp2_A16	lp2_F13
+A17	Nefazodone (hydrochloride) 	90	3	1	r1	Nefa	Nefa_90_r1	vp2_A17	lp2_F13
+A18	Nefazodone (hydrochloride) 	90	3	2	r2	Nefa	Nefa_90_r2	vp2_A18	lp2_F13
+A19	Nefazodone (hydrochloride) 	60	2	1	r1	Nefa	Nefa_60_r1	vp2_A19	lp2_F13
+A20	Nefazodone (hydrochloride) 	60	2	2	r2	Nefa	Nefa_60_r2	vp2_A20	lp2_F13
+A21	Nefazodone (hydrochloride) 	30	1	1	r1	Nefa	Nefa_30_r1	vp2_A21	lp2_F13
+A22	Nefazodone (hydrochloride) 	30	1	2	r2	Nefa	Nefa_30_r2	vp2_A22	lp2_F13
+A23	Nefazodone (hydrochloride) 	0	0	1	r1	Nefa	Nefa_0_r1	vp2_A23	lp2_F13
+A24	Nefazodone (hydrochloride) 	0	0	2	r2	Nefa	Nefa_0_r2	vp2_A24	lp2_F13
+B1	Clotrimazole	150	5	3	r3	Clot	Clot_150_r3	vp2_B1	lp2_L18
+B2	Clotrimazole	150	5	4	r4	Clot	Clot_150_r4	vp2_B2	lp2_L18
+B3	Clotrimazole	120	4	3	r3	Clot	Clot_120_r3	vp2_B3	lp2_L18
+B4	Clotrimazole	120	4	4	r4	Clot	Clot_120_r4	vp2_B4	lp2_L18
+B5	Clotrimazole	90	3	3	r3	Clot	Clot_90_r3	vp2_B5	lp2_L18
+B6	Clotrimazole	90	3	4	r4	Clot	Clot_90_r4	vp2_B6	lp2_L18
+B7	Clotrimazole	60	2	3	r3	Clot	Clot_60_r3	vp2_B7	lp2_L18
+B8	Clotrimazole	60	2	4	r4	Clot	Clot_60_r4	vp2_B8	lp2_L18
+B9	Clotrimazole	30	1	3	r3	Clot	Clot_30_r3	vp2_B9	lp2_L18
+B10	Clotrimazole	30	1	4	r4	Clot	Clot_30_r4	vp2_B10	lp2_L18
+B11	Clotrimazole	0	0	3	r3	Clot	Clot_0_r3	vp2_B11	lp2_L18
+B12	Clotrimazole	0	0	4	r4	Clot	Clot_0_r4	vp2_B12	lp2_L18
+B13	Nefazodone (hydrochloride) 	150	5	3	r3	Nefa	Nefa_150_r3	vp2_B13	lp2_F13
+B14	Nefazodone (hydrochloride) 	150	5	4	r4	Nefa	Nefa_150_r4	vp2_B14	lp2_F13
+B15	Nefazodone (hydrochloride) 	120	4	3	r3	Nefa	Nefa_120_r3	vp2_B15	lp2_F13
+B16	Nefazodone (hydrochloride) 	120	4	4	r4	Nefa	Nefa_120_r4	vp2_B16	lp2_F13
+B17	Nefazodone (hydrochloride) 	90	3	3	r3	Nefa	Nefa_90_r3	vp2_B17	lp2_F13
+B18	Nefazodone (hydrochloride) 	90	3	4	r4	Nefa	Nefa_90_r4	vp2_B18	lp2_F13
+B19	Nefazodone (hydrochloride) 	60	2	3	r3	Nefa	Nefa_60_r3	vp2_B19	lp2_F13
+B20	Nefazodone (hydrochloride) 	60	2	4	r4	Nefa	Nefa_60_r4	vp2_B20	lp2_F13
+B21	Nefazodone (hydrochloride) 	30	1	3	r3	Nefa	Nefa_30_r3	vp2_B21	lp2_F13
+B22	Nefazodone (hydrochloride) 	30	1	4	r4	Nefa	Nefa_30_r4	vp2_B22	lp2_F13
+B23	Nefazodone (hydrochloride) 	0	0	3	r3	Nefa	Nefa_0_r3	vp2_B23	lp2_F13
+B24	Nefazodone (hydrochloride) 	0	0	4	r4	Nefa	Nefa_0_r4	vp2_B24	lp2_F13
+C1	Gemcitabine	150	5	1	r1	Gemc	Gemc_150_r1	vp2_C1	lp4_P17
+C2	Gemcitabine	150	5	2	r2	Gemc	Gemc_150_r2	vp2_C2	lp4_P17
+C3	Gemcitabine	120	4	1	r1	Gemc	Gemc_120_r1	vp2_C3	lp4_P17
+C4	Gemcitabine	120	4	2	r2	Gemc	Gemc_120_r2	vp2_C4	lp4_P17
+C5	Gemcitabine	90	3	1	r1	Gemc	Gemc_90_r1	vp2_C5	lp4_P17
+C6	Gemcitabine	90	3	2	r2	Gemc	Gemc_90_r2	vp2_C6	lp4_P17
+C7	Gemcitabine	60	2	1	r1	Gemc	Gemc_60_r1	vp2_C7	lp4_P17
+C8	Gemcitabine	60	2	2	r2	Gemc	Gemc_60_r2	vp2_C8	lp4_P17
+C9	Gemcitabine	30	1	1	r1	Gemc	Gemc_30_r1	vp2_C9	lp4_P17
+C10	Gemcitabine	30	1	2	r2	Gemc	Gemc_30_r2	vp2_C10	lp4_P17
+C11	Gemcitabine	0	0	1	r1	Gemc	Gemc_0_r1	vp2_C11	lp4_P17
+C12	Gemcitabine	0	0	2	r2	Gemc	Gemc_0_r2	vp2_C12	lp4_P17
+C13	Cinnarizine	150	5	1	r1	Cinn	Cinn_150_r1	vp2_C13	lp6_I12
+C14	Cinnarizine	150	5	2	r2	Cinn	Cinn_150_r2	vp2_C14	lp6_I12
+C15	Cinnarizine	120	4	1	r1	Cinn	Cinn_120_r1	vp2_C15	lp6_I12
+C16	Cinnarizine	120	4	2	r2	Cinn	Cinn_120_r2	vp2_C16	lp6_I12
+C17	Cinnarizine	90	3	1	r1	Cinn	Cinn_90_r1	vp2_C17	lp6_I12
+C18	Cinnarizine	90	3	2	r2	Cinn	Cinn_90_r2	vp2_C18	lp6_I12
+C19	Cinnarizine	60	2	1	r1	Cinn	Cinn_60_r1	vp2_C19	lp6_I12
+C20	Cinnarizine	60	2	2	r2	Cinn	Cinn_60_r2	vp2_C20	lp6_I12
+C21	Cinnarizine	30	1	1	r1	Cinn	Cinn_30_r1	vp2_C21	lp6_I12
+C22	Cinnarizine	30	1	2	r2	Cinn	Cinn_30_r2	vp2_C22	lp6_I12
+C23	Cinnarizine	0	0	1	r1	Cinn	Cinn_0_r1	vp2_C23	lp6_I12
+C24	Cinnarizine	0	0	2	r2	Cinn	Cinn_0_r2	vp2_C24	lp6_I12
+D1	Gemcitabine	150	5	3	r3	Gemc	Gemc_150_r3	vp2_D1	lp4_P17
+D2	Gemcitabine	150	5	4	r4	Gemc	Gemc_150_r4	vp2_D2	lp4_P17
+D3	Gemcitabine	120	4	3	r3	Gemc	Gemc_120_r3	vp2_D3	lp4_P17
+D4	Gemcitabine	120	4	4	r4	Gemc	Gemc_120_r4	vp2_D4	lp4_P17
+D5	Gemcitabine	90	3	3	r3	Gemc	Gemc_90_r3	vp2_D5	lp4_P17
+D6	Gemcitabine	90	3	4	r4	Gemc	Gemc_90_r4	vp2_D6	lp4_P17
+D7	Gemcitabine	60	2	3	r3	Gemc	Gemc_60_r3	vp2_D7	lp4_P17
+D8	Gemcitabine	60	2	4	r4	Gemc	Gemc_60_r4	vp2_D8	lp4_P17
+D9	Gemcitabine	30	1	3	r3	Gemc	Gemc_30_r3	vp2_D9	lp4_P17
+D10	Gemcitabine	30	1	4	r4	Gemc	Gemc_30_r4	vp2_D10	lp4_P17
+D11	Gemcitabine	0	0	3	r3	Gemc	Gemc_0_r3	vp2_D11	lp4_P17
+D12	Gemcitabine	0	0	4	r4	Gemc	Gemc_0_r4	vp2_D12	lp4_P17
+D13	Cinnarizine	150	5	3	r3	Cinn	Cinn_150_r3	vp2_D13	lp6_I12
+D14	Cinnarizine	150	5	4	r4	Cinn	Cinn_150_r4	vp2_D14	lp6_I12
+D15	Cinnarizine	120	4	3	r3	Cinn	Cinn_120_r3	vp2_D15	lp6_I12
+D16	Cinnarizine	120	4	4	r4	Cinn	Cinn_120_r4	vp2_D16	lp6_I12
+D17	Cinnarizine	90	3	3	r3	Cinn	Cinn_90_r3	vp2_D17	lp6_I12
+D18	Cinnarizine	90	3	4	r4	Cinn	Cinn_90_r4	vp2_D18	lp6_I12
+D19	Cinnarizine	60	2	3	r3	Cinn	Cinn_60_r3	vp2_D19	lp6_I12
+D20	Cinnarizine	60	2	4	r4	Cinn	Cinn_60_r4	vp2_D20	lp6_I12
+D21	Cinnarizine	30	1	3	r3	Cinn	Cinn_30_r3	vp2_D21	lp6_I12
+D22	Cinnarizine	30	1	4	r4	Cinn	Cinn_30_r4	vp2_D22	lp6_I12
+D23	Cinnarizine	0	0	3	r3	Cinn	Cinn_0_r3	vp2_D23	lp6_I12
+D24	Cinnarizine	0	0	4	r4	Cinn	Cinn_0_r4	vp2_D24	lp6_I12
+E1	Pinaverium bromide	150	5	1	r1	Pina	Pina_150_r1	vp2_E1	lp2_C8
+E2	Pinaverium bromide	150	5	2	r2	Pina	Pina_150_r2	vp2_E2	lp2_C8
+E3	Pinaverium bromide	120	4	1	r1	Pina	Pina_120_r1	vp2_E3	lp2_C8
+E4	Pinaverium bromide	120	4	2	r2	Pina	Pina_120_r2	vp2_E4	lp2_C8
+E5	Pinaverium bromide	90	3	1	r1	Pina	Pina_90_r1	vp2_E5	lp2_C8
+E6	Pinaverium bromide	90	3	2	r2	Pina	Pina_90_r2	vp2_E6	lp2_C8
+E7	Pinaverium bromide	60	2	1	r1	Pina	Pina_60_r1	vp2_E7	lp2_C8
+E8	Pinaverium bromide	60	2	2	r2	Pina	Pina_60_r2	vp2_E8	lp2_C8
+E9	Pinaverium bromide	30	1	1	r1	Pina	Pina_30_r1	vp2_E9	lp2_C8
+E10	Pinaverium bromide	30	1	2	r2	Pina	Pina_30_r2	vp2_E10	lp2_C8
+E11	Pinaverium bromide	0	0	1	r1	Pina	Pina_0_r1	vp2_E11	lp2_C8
+E12	Pinaverium bromide	0	0	2	r2	Pina	Pina_0_r2	vp2_E12	lp2_C8
+E13	Clemastine (fumarate)	150	5	1	r1	Clem	Clem_150_r1	vp2_E13	lp5_D22
+E14	Clemastine (fumarate)	150	5	2	r2	Clem	Clem_150_r2	vp2_E14	lp5_D22
+E15	Clemastine (fumarate)	120	4	1	r1	Clem	Clem_120_r1	vp2_E15	lp5_D22
+E16	Clemastine (fumarate)	120	4	2	r2	Clem	Clem_120_r2	vp2_E16	lp5_D22
+E17	Clemastine (fumarate)	90	3	1	r1	Clem	Clem_90_r1	vp2_E17	lp5_D22
+E18	Clemastine (fumarate)	90	3	2	r2	Clem	Clem_90_r2	vp2_E18	lp5_D22
+E19	Clemastine (fumarate)	60	2	1	r1	Clem	Clem_60_r1	vp2_E19	lp5_D22
+E20	Clemastine (fumarate)	60	2	2	r2	Clem	Clem_60_r2	vp2_E20	lp5_D22
+E21	Clemastine (fumarate)	30	1	1	r1	Clem	Clem_30_r1	vp2_E21	lp5_D22
+E22	Clemastine (fumarate)	30	1	2	r2	Clem	Clem_30_r2	vp2_E22	lp5_D22
+E23	Clemastine (fumarate)	0	0	1	r1	Clem	Clem_0_r1	vp2_E23	lp5_D22
+E24	Clemastine (fumarate)	0	0	2	r2	Clem	Clem_0_r2	vp2_E24	lp5_D22
+F1	Pinaverium bromide	150	5	3	r3	Pina	Pina_150_r3	vp2_F1	lp2_C8
+F2	Pinaverium bromide	150	5	4	r4	Pina	Pina_150_r4	vp2_F2	lp2_C8
+F3	Pinaverium bromide	120	4	3	r3	Pina	Pina_120_r3	vp2_F3	lp2_C8
+F4	Pinaverium bromide	120	4	4	r4	Pina	Pina_120_r4	vp2_F4	lp2_C8
+F5	Pinaverium bromide	90	3	3	r3	Pina	Pina_90_r3	vp2_F5	lp2_C8
+F6	Pinaverium bromide	90	3	4	r4	Pina	Pina_90_r4	vp2_F6	lp2_C8
+F7	Pinaverium bromide	60	2	3	r3	Pina	Pina_60_r3	vp2_F7	lp2_C8
+F8	Pinaverium bromide	60	2	4	r4	Pina	Pina_60_r4	vp2_F8	lp2_C8
+F9	Pinaverium bromide	30	1	3	r3	Pina	Pina_30_r3	vp2_F9	lp2_C8
+F10	Pinaverium bromide	30	1	4	r4	Pina	Pina_30_r4	vp2_F10	lp2_C8
+F11	Pinaverium bromide	0	0	3	r3	Pina	Pina_0_r3	vp2_F11	lp2_C8
+F12	Pinaverium bromide	0	0	4	r4	Pina	Pina_0_r4	vp2_F12	lp2_C8
+F13	Clemastine (fumarate)	150	5	3	r3	Clem	Clem_150_r3	vp2_F13	lp5_D22
+F14	Clemastine (fumarate)	150	5	4	r4	Clem	Clem_150_r4	vp2_F14	lp5_D22
+F15	Clemastine (fumarate)	120	4	3	r3	Clem	Clem_120_r3	vp2_F15	lp5_D22
+F16	Clemastine (fumarate)	120	4	4	r4	Clem	Clem_120_r4	vp2_F16	lp5_D22
+F17	Clemastine (fumarate)	90	3	3	r3	Clem	Clem_90_r3	vp2_F17	lp5_D22
+F18	Clemastine (fumarate)	90	3	4	r4	Clem	Clem_90_r4	vp2_F18	lp5_D22
+F19	Clemastine (fumarate)	60	2	3	r3	Clem	Clem_60_r3	vp2_F19	lp5_D22
+F20	Clemastine (fumarate)	60	2	4	r4	Clem	Clem_60_r4	vp2_F20	lp5_D22
+F21	Clemastine (fumarate)	30	1	3	r3	Clem	Clem_30_r3	vp2_F21	lp5_D22
+F22	Clemastine (fumarate)	30	1	4	r4	Clem	Clem_30_r4	vp2_F22	lp5_D22
+F23	Clemastine (fumarate)	0	0	3	r3	Clem	Clem_0_r3	vp2_F23	lp5_D22
+F24	Clemastine (fumarate)	0	0	4	r4	Clem	Clem_0_r4	vp2_F24	lp5_D22
+G1	Tioconazole	150	5	1	r1	Tioc	Tioc_150_r1	vp2_G1	lp3_F16
+G2	Tioconazole	150	5	2	r2	Tioc	Tioc_150_r2	vp2_G2	lp3_F16
+G3	Tioconazole	120	4	1	r1	Tioc	Tioc_120_r1	vp2_G3	lp3_F16
+G4	Tioconazole	120	4	2	r2	Tioc	Tioc_120_r2	vp2_G4	lp3_F16
+G5	Tioconazole	90	3	1	r1	Tioc	Tioc_90_r1	vp2_G5	lp3_F16
+G6	Tioconazole	90	3	2	r2	Tioc	Tioc_90_r2	vp2_G6	lp3_F16
+G7	Tioconazole	60	2	1	r1	Tioc	Tioc_60_r1	vp2_G7	lp3_F16
+G8	Tioconazole	60	2	2	r2	Tioc	Tioc_60_r2	vp2_G8	lp3_F16
+G9	Tioconazole	30	1	1	r1	Tioc	Tioc_30_r1	vp2_G9	lp3_F16
+G10	Tioconazole	30	1	2	r2	Tioc	Tioc_30_r2	vp2_G10	lp3_F16
+G11	Tioconazole	0	0	1	r1	Tioc	Tioc_0_r1	vp2_G11	lp3_F16
+G12	Tioconazole	0	0	2	r2	Tioc	Tioc_0_r2	vp2_G12	lp3_F16
+G13	Ketoconazole	150	5	1	r1	Keto	Keto_150_r1	vp2_G13	lp5_M23
+G14	Ketoconazole	150	5	2	r2	Keto	Keto_150_r2	vp2_G14	lp5_M23
+G15	Ketoconazole	120	4	1	r1	Keto	Keto_120_r1	vp2_G15	lp5_M23
+G16	Ketoconazole	120	4	2	r2	Keto	Keto_120_r2	vp2_G16	lp5_M23
+G17	Ketoconazole	90	3	1	r1	Keto	Keto_90_r1	vp2_G17	lp5_M23
+G18	Ketoconazole	90	3	2	r2	Keto	Keto_90_r2	vp2_G18	lp5_M23
+G19	Ketoconazole	60	2	1	r1	Keto	Keto_60_r1	vp2_G19	lp5_M23
+G20	Ketoconazole	60	2	2	r2	Keto	Keto_60_r2	vp2_G20	lp5_M23
+G21	Ketoconazole	30	1	1	r1	Keto	Keto_30_r1	vp2_G21	lp5_M23
+G22	Ketoconazole	30	1	2	r2	Keto	Keto_30_r2	vp2_G22	lp5_M23
+G23	Ketoconazole	0	0	1	r1	Keto	Keto_0_r1	vp2_G23	lp5_M23
+G24	Ketoconazole	0	0	2	r2	Keto	Keto_0_r2	vp2_G24	lp5_M23
+H1	Tioconazole	150	5	3	r3	Tioc	Tioc_150_r3	vp2_H1	lp3_F16
+H2	Tioconazole	150	5	4	r4	Tioc	Tioc_150_r4	vp2_H2	lp3_F16
+H3	Tioconazole	120	4	3	r3	Tioc	Tioc_120_r3	vp2_H3	lp3_F16
+H4	Tioconazole	120	4	4	r4	Tioc	Tioc_120_r4	vp2_H4	lp3_F16
+H5	Tioconazole	90	3	3	r3	Tioc	Tioc_90_r3	vp2_H5	lp3_F16
+H6	Tioconazole	90	3	4	r4	Tioc	Tioc_90_r4	vp2_H6	lp3_F16
+H7	Tioconazole	60	2	3	r3	Tioc	Tioc_60_r3	vp2_H7	lp3_F16
+H8	Tioconazole	60	2	4	r4	Tioc	Tioc_60_r4	vp2_H8	lp3_F16
+H9	Tioconazole	30	1	3	r3	Tioc	Tioc_30_r3	vp2_H9	lp3_F16
+H10	Tioconazole	30	1	4	r4	Tioc	Tioc_30_r4	vp2_H10	lp3_F16
+H11	Tioconazole	0	0	3	r3	Tioc	Tioc_0_r3	vp2_H11	lp3_F16
+H12	Tioconazole	0	0	4	r4	Tioc	Tioc_0_r4	vp2_H12	lp3_F16
+H13	Ketoconazole	150	5	3	r3	Keto	Keto_150_r3	vp2_H13	lp5_M23
+H14	Ketoconazole	150	5	4	r4	Keto	Keto_150_r4	vp2_H14	lp5_M23
+H15	Ketoconazole	120	4	3	r3	Keto	Keto_120_r3	vp2_H15	lp5_M23
+H16	Ketoconazole	120	4	4	r4	Keto	Keto_120_r4	vp2_H16	lp5_M23
+H17	Ketoconazole	90	3	3	r3	Keto	Keto_90_r3	vp2_H17	lp5_M23
+H18	Ketoconazole	90	3	4	r4	Keto	Keto_90_r4	vp2_H18	lp5_M23
+H19	Ketoconazole	60	2	3	r3	Keto	Keto_60_r3	vp2_H19	lp5_M23
+H20	Ketoconazole	60	2	4	r4	Keto	Keto_60_r4	vp2_H20	lp5_M23
+H21	Ketoconazole	30	1	3	r3	Keto	Keto_30_r3	vp2_H21	lp5_M23
+H22	Ketoconazole	30	1	4	r4	Keto	Keto_30_r4	vp2_H22	lp5_M23
+H23	Ketoconazole	0	0	3	r3	Keto	Keto_0_r3	vp2_H23	lp5_M23
+H24	Ketoconazole	0	0	4	r4	Keto	Keto_0_r4	vp2_H24	lp5_M23
+I1	Terfenadine	150	5	1	r1	Terf	Terf_150_r1	vp2_I1	lp7_L21
+I2	Terfenadine	150	5	2	r2	Terf	Terf_150_r2	vp2_I2	lp7_L21
+I3	Terfenadine	120	4	1	r1	Terf	Terf_120_r1	vp2_I3	lp7_L21
+I4	Terfenadine	120	4	2	r2	Terf	Terf_120_r2	vp2_I4	lp7_L21
+I5	Terfenadine	90	3	1	r1	Terf	Terf_90_r1	vp2_I5	lp7_L21
+I6	Terfenadine	90	3	2	r2	Terf	Terf_90_r2	vp2_I6	lp7_L21
+I7	Terfenadine	60	2	1	r1	Terf	Terf_60_r1	vp2_I7	lp7_L21
+I8	Terfenadine	60	2	2	r2	Terf	Terf_60_r2	vp2_I8	lp7_L21
+I9	Terfenadine	30	1	1	r1	Terf	Terf_30_r1	vp2_I9	lp7_L21
+I10	Terfenadine	30	1	2	r2	Terf	Terf_30_r2	vp2_I10	lp7_L21
+I11	Terfenadine	0	0	1	r1	Terf	Terf_0_r1	vp2_I11	lp7_L21
+I12	Terfenadine	0	0	2	r2	Terf	Terf_0_r2	vp2_I12	lp7_L21
+I13	Novobiocin	150	5	1	r1	Novo	Novo_150_r1	vp2_I13	lp2_K2
+I14	Novobiocin	150	5	2	r2	Novo	Novo_150_r2	vp2_I14	lp2_K2
+I15	Novobiocin	120	4	1	r1	Novo	Novo_120_r1	vp2_I15	lp2_K2
+I16	Novobiocin	120	4	2	r2	Novo	Novo_120_r2	vp2_I16	lp2_K2
+I17	Novobiocin	90	3	1	r1	Novo	Novo_90_r1	vp2_I17	lp2_K2
+I18	Novobiocin	90	3	2	r2	Novo	Novo_90_r2	vp2_I18	lp2_K2
+I19	Novobiocin	60	2	1	r1	Novo	Novo_60_r1	vp2_I19	lp2_K2
+I20	Novobiocin	60	2	2	r2	Novo	Novo_60_r2	vp2_I20	lp2_K2
+I21	Novobiocin	30	1	1	r1	Novo	Novo_30_r1	vp2_I21	lp2_K2
+I22	Novobiocin	30	1	2	r2	Novo	Novo_30_r2	vp2_I22	lp2_K2
+I23	Novobiocin	0	0	1	r1	Novo	Novo_0_r1	vp2_I23	lp2_K2
+I24	Novobiocin	0	0	2	r2	Novo	Novo_0_r2	vp2_I24	lp2_K2
+J1	Terfenadine	150	5	3	r3	Terf	Terf_150_r3	vp2_J1	lp7_L21
+J2	Terfenadine	150	5	4	r4	Terf	Terf_150_r4	vp2_J2	lp7_L21
+J3	Terfenadine	120	4	3	r3	Terf	Terf_120_r3	vp2_J3	lp7_L21
+J4	Terfenadine	120	4	4	r4	Terf	Terf_120_r4	vp2_J4	lp7_L21
+J5	Terfenadine	90	3	3	r3	Terf	Terf_90_r3	vp2_J5	lp7_L21
+J6	Terfenadine	90	3	4	r4	Terf	Terf_90_r4	vp2_J6	lp7_L21
+J7	Terfenadine	60	2	3	r3	Terf	Terf_60_r3	vp2_J7	lp7_L21
+J8	Terfenadine	60	2	4	r4	Terf	Terf_60_r4	vp2_J8	lp7_L21
+J9	Terfenadine	30	1	3	r3	Terf	Terf_30_r3	vp2_J9	lp7_L21
+J10	Terfenadine	30	1	4	r4	Terf	Terf_30_r4	vp2_J10	lp7_L21
+J11	Terfenadine	0	0	3	r3	Terf	Terf_0_r3	vp2_J11	lp7_L21
+J12	Terfenadine	0	0	4	r4	Terf	Terf_0_r4	vp2_J12	lp7_L21
+J13	Novobiocin	150	5	3	r3	Novo	Novo_150_r3	vp2_J13	lp2_K2
+J14	Novobiocin	150	5	4	r4	Novo	Novo_150_r4	vp2_J14	lp2_K2
+J15	Novobiocin	120	4	3	r3	Novo	Novo_120_r3	vp2_J15	lp2_K2
+J16	Novobiocin	120	4	4	r4	Novo	Novo_120_r4	vp2_J16	lp2_K2
+J17	Novobiocin	90	3	3	r3	Novo	Novo_90_r3	vp2_J17	lp2_K2
+J18	Novobiocin	90	3	4	r4	Novo	Novo_90_r4	vp2_J18	lp2_K2
+J19	Novobiocin	60	2	3	r3	Novo	Novo_60_r3	vp2_J19	lp2_K2
+J20	Novobiocin	60	2	4	r4	Novo	Novo_60_r4	vp2_J20	lp2_K2
+J21	Novobiocin	30	1	3	r3	Novo	Novo_30_r3	vp2_J21	lp2_K2
+J22	Novobiocin	30	1	4	r4	Novo	Novo_30_r4	vp2_J22	lp2_K2
+J23	Novobiocin	0	0	3	r3	Novo	Novo_0_r3	vp2_J23	lp2_K2
+J24	Novobiocin	0	0	4	r4	Novo	Novo_0_r4	vp2_J24	lp2_K2
+K1	Fluoxetine hydrochloride 	150	5	1	r1	Flux	Flux_150_r1	vp2_K1	lp6_M3
+K2	Fluoxetine hydrochloride 	150	5	2	r2	Flux	Flux_150_r2	vp2_K2	lp6_M3
+K3	Fluoxetine hydrochloride 	120	4	1	r1	Flux	Flux_120_r1	vp2_K3	lp6_M3
+K4	Fluoxetine hydrochloride 	120	4	2	r2	Flux	Flux_120_r2	vp2_K4	lp6_M3
+K5	Fluoxetine hydrochloride 	90	3	1	r1	Flux	Flux_90_r1	vp2_K5	lp6_M3
+K6	Fluoxetine hydrochloride 	90	3	2	r2	Flux	Flux_90_r2	vp2_K6	lp6_M3
+K7	Fluoxetine hydrochloride 	60	2	1	r1	Flux	Flux_60_r1	vp2_K7	lp6_M3
+K8	Fluoxetine hydrochloride 	60	2	2	r2	Flux	Flux_60_r2	vp2_K8	lp6_M3
+K9	Fluoxetine hydrochloride 	30	1	1	r1	Flux	Flux_30_r1	vp2_K9	lp6_M3
+K10	Fluoxetine hydrochloride 	30	1	2	r2	Flux	Flux_30_r2	vp2_K10	lp6_M3
+K11	Fluoxetine hydrochloride 	0	0	1	r1	Flux	Flux_0_r1	vp2_K11	lp6_M3
+K12	Fluoxetine hydrochloride 	0	0	2	r2	Flux	Flux_0_r2	vp2_K12	lp6_M3
+K13	Paraquat	50	5	1	r1	Para	Para_50_r1	vp2_K13	not present
+K14	Paraquat	50	5	2	r2	Para	Para_50_r2	vp2_K14	not present
+K15	Paraquat	40	4	1	r1	Para	Para_40_r1	vp2_K15	not present
+K16	Paraquat	40	4	2	r2	Para	Para_40_r2	vp2_K16	not present
+K17	Paraquat	30	3	1	r1	Para	Para_30_r1	vp2_K17	not present
+K18	Paraquat	30	3	2	r2	Para	Para_30_r2	vp2_K18	not present
+K19	Paraquat	20	2	1	r1	Para	Para_20_r1	vp2_K19	not present
+K20	Paraquat	20	2	2	r2	Para	Para_20_r2	vp2_K20	not present
+K21	Paraquat	10	1	1	r1	Para	Para_10_r1	vp2_K21	not present
+K22	Paraquat	10	1	2	r2	Para	Para_10_r2	vp2_K22	not present
+K23	Paraquat	0	0	1	r1	Para	Para_0_r1	vp2_K23	not present
+K24	Paraquat	0	0	2	r2	Para	Para_0_r2	vp2_K24	not present
+L1	Fluoxetine hydrochloride 	150	5	3	r3	Flux	Flux_150_r3	vp2_L1	lp6_M3
+L2	Fluoxetine hydrochloride 	150	5	4	r4	Flux	Flux_150_r4	vp2_L2	lp6_M3
+L3	Fluoxetine hydrochloride 	120	4	3	r3	Flux	Flux_120_r3	vp2_L3	lp6_M3
+L4	Fluoxetine hydrochloride 	120	4	4	r4	Flux	Flux_120_r4	vp2_L4	lp6_M3
+L5	Fluoxetine hydrochloride 	90	3	3	r3	Flux	Flux_90_r3	vp2_L5	lp6_M3
+L6	Fluoxetine hydrochloride 	90	3	4	r4	Flux	Flux_90_r4	vp2_L6	lp6_M3
+L7	Fluoxetine hydrochloride 	60	2	3	r3	Flux	Flux_60_r3	vp2_L7	lp6_M3
+L8	Fluoxetine hydrochloride 	60	2	4	r4	Flux	Flux_60_r4	vp2_L8	lp6_M3
+L9	Fluoxetine hydrochloride 	30	1	3	r3	Flux	Flux_30_r3	vp2_L9	lp6_M3
+L10	Fluoxetine hydrochloride 	30	1	4	r4	Flux	Flux_30_r4	vp2_L10	lp6_M3
+L11	Fluoxetine hydrochloride 	0	0	3	r3	Flux	Flux_0_r3	vp2_L11	lp6_M3
+L12	Fluoxetine hydrochloride 	0	0	4	r4	Flux	Flux_0_r4	vp2_L12	lp6_M3
+L13	Paraquat	50	5	3	r3	Para	Para_50_r3	vp2_L13	not present
+L14	Paraquat	50	5	4	r4	Para	Para_50_r4	vp2_L14	not present
+L15	Paraquat	40	4	3	r3	Para	Para_40_r3	vp2_L15	not present
+L16	Paraquat	40	4	4	r4	Para	Para_40_r4	vp2_L16	not present
+L17	Paraquat	30	3	3	r3	Para	Para_30_r3	vp2_L17	not present
+L18	Paraquat	30	3	4	r4	Para	Para_30_r4	vp2_L18	not present
+L19	Paraquat	20	2	3	r3	Para	Para_20_r3	vp2_L19	not present
+L20	Paraquat	20	2	4	r4	Para	Para_20_r4	vp2_L20	not present
+L21	Paraquat	10	1	3	r3	Para	Para_10_r3	vp2_L21	not present
+L22	Paraquat	10	1	4	r4	Para	Para_10_r4	vp2_L22	not present
+L23	Paraquat	0	0	3	r3	Para	Para_0_r3	vp2_L23	not present
+L24	Paraquat	0	0	4	r4	Para	Para_0_r4	vp2_L24	not present
+M1	Econazole (nitrate) 	150	5	1	r1	Ecoz	Ecoz_150_r1	vp2_M1	lp7_M10
+M2	Econazole (nitrate) 	150	5	2	r2	Ecoz	Ecoz_150_r2	vp2_M2	lp7_M10
+M3	Econazole (nitrate) 	120	4	1	r1	Ecoz	Ecoz_120_r1	vp2_M3	lp7_M10
+M4	Econazole (nitrate) 	120	4	2	r2	Ecoz	Ecoz_120_r2	vp2_M4	lp7_M10
+M5	Econazole (nitrate) 	90	3	1	r1	Ecoz	Ecoz_90_r1	vp2_M5	lp7_M10
+M6	Econazole (nitrate) 	90	3	2	r2	Ecoz	Ecoz_90_r2	vp2_M6	lp7_M10
+M7	Econazole (nitrate) 	60	2	1	r1	Ecoz	Ecoz_60_r1	vp2_M7	lp7_M10
+M8	Econazole (nitrate) 	60	2	2	r2	Ecoz	Ecoz_60_r2	vp2_M8	lp7_M10
+M9	Econazole (nitrate) 	30	1	1	r1	Ecoz	Ecoz_30_r1	vp2_M9	lp7_M10
+M10	Econazole (nitrate) 	30	1	2	r2	Ecoz	Ecoz_30_r2	vp2_M10	lp7_M10
+M11	Econazole (nitrate) 	0	0	1	r1	Ecoz	Ecoz_0_r1	vp2_M11	lp7_M10
+M12	Econazole (nitrate) 	0	0	2	r2	Ecoz	Ecoz_0_r2	vp2_M12	lp7_M10
+M13	Auranofin	50	5	1	r1	Aura	Aura_50_r1	vp2_M13	lp6_L23
+M14	Auranofin	50	5	2	r2	Aura	Aura_50_r2	vp2_M14	lp6_L23
+M15	Auranofin	40	4	1	r1	Aura	Aura_40_r1	vp2_M15	lp6_L23
+M16	Auranofin	40	4	2	r2	Aura	Aura_40_r2	vp2_M16	lp6_L23
+M17	Auranofin	30	3	1	r1	Aura	Aura_30_r1	vp2_M17	lp6_L23
+M18	Auranofin	30	3	2	r2	Aura	Aura_30_r2	vp2_M18	lp6_L23
+M19	Auranofin	20	2	1	r1	Aura	Aura_20_r1	vp2_M19	lp6_L23
+M20	Auranofin	20	2	2	r2	Aura	Aura_20_r2	vp2_M20	lp6_L23
+M21	Auranofin	10	1	1	r1	Aura	Aura_10_r1	vp2_M21	lp6_L23
+M22	Auranofin	10	1	2	r2	Aura	Aura_10_r2	vp2_M22	lp6_L23
+M23	Auranofin	0	0	1	r1	Aura	Aura_0_r1	vp2_M23	lp6_L23
+M24	Auranofin	0	0	2	r2	Aura	Aura_0_r2	vp2_M24	lp6_L23
+N1	Econazole (nitrate) 	150	5	3	r3	Ecoz	Ecoz_150_r3	vp2_N1	lp7_M10
+N2	Econazole (nitrate) 	150	5	4	r4	Ecoz	Ecoz_150_r4	vp2_N2	lp7_M10
+N3	Econazole (nitrate) 	120	4	3	r3	Ecoz	Ecoz_120_r3	vp2_N3	lp7_M10
+N4	Econazole (nitrate) 	120	4	4	r4	Ecoz	Ecoz_120_r4	vp2_N4	lp7_M10
+N5	Econazole (nitrate) 	90	3	3	r3	Ecoz	Ecoz_90_r3	vp2_N5	lp7_M10
+N6	Econazole (nitrate) 	90	3	4	r4	Ecoz	Ecoz_90_r4	vp2_N6	lp7_M10
+N7	Econazole (nitrate) 	60	2	3	r3	Ecoz	Ecoz_60_r3	vp2_N7	lp7_M10
+N8	Econazole (nitrate) 	60	2	4	r4	Ecoz	Ecoz_60_r4	vp2_N8	lp7_M10
+N9	Econazole (nitrate) 	30	1	3	r3	Ecoz	Ecoz_30_r3	vp2_N9	lp7_M10
+N10	Econazole (nitrate) 	30	1	4	r4	Ecoz	Ecoz_30_r4	vp2_N10	lp7_M10
+N11	Econazole (nitrate) 	0	0	3	r3	Ecoz	Ecoz_0_r3	vp2_N11	lp7_M10
+N12	Econazole (nitrate) 	0	0	4	r4	Ecoz	Ecoz_0_r4	vp2_N12	lp7_M10
+N13	Auranofin	50	5	3	r3	Aura	Aura_50_r3	vp2_N13	lp6_L23
+N14	Auranofin	50	5	4	r4	Aura	Aura_50_r4	vp2_N14	lp6_L23
+N15	Auranofin	40	4	3	r3	Aura	Aura_40_r3	vp2_N15	lp6_L23
+N16	Auranofin	40	4	4	r4	Aura	Aura_40_r4	vp2_N16	lp6_L23
+N17	Auranofin	30	3	3	r3	Aura	Aura_30_r3	vp2_N17	lp6_L23
+N18	Auranofin	30	3	4	r4	Aura	Aura_30_r4	vp2_N18	lp6_L23
+N19	Auranofin	20	2	3	r3	Aura	Aura_20_r3	vp2_N19	lp6_L23
+N20	Auranofin	20	2	4	r4	Aura	Aura_20_r4	vp2_N20	lp6_L23
+N21	Auranofin	10	1	3	r3	Aura	Aura_10_r3	vp2_N21	lp6_L23
+N22	Auranofin	10	1	4	r4	Aura	Aura_10_r4	vp2_N22	lp6_L23
+N23	Auranofin	0	0	3	r3	Aura	Aura_0_r3	vp2_N23	lp6_L23
+N24	Auranofin	0	0	4	r4	Aura	Aura_0_r4	vp2_N24	lp6_L23
+O1	Oxiconazole (nitrate)	150	5	1	r1	Oxiz	Oxiz_150_r1	vp2_O1	lp4_F3
+O2	Oxiconazole (nitrate)	150	5	2	r2	Oxiz	Oxiz_150_r2	vp2_O2	lp4_F3
+O3	Oxiconazole (nitrate)	120	4	1	r1	Oxiz	Oxiz_120_r1	vp2_O3	lp4_F3
+O4	Oxiconazole (nitrate)	120	4	2	r2	Oxiz	Oxiz_120_r2	vp2_O4	lp4_F3
+O5	Oxiconazole (nitrate)	90	3	1	r1	Oxiz	Oxiz_90_r1	vp2_O5	lp4_F3
+O6	Oxiconazole (nitrate)	90	3	2	r2	Oxiz	Oxiz_90_r2	vp2_O6	lp4_F3
+O7	Oxiconazole (nitrate)	60	2	1	r1	Oxiz	Oxiz_60_r1	vp2_O7	lp4_F3
+O8	Oxiconazole (nitrate)	60	2	2	r2	Oxiz	Oxiz_60_r2	vp2_O8	lp4_F3
+O9	Oxiconazole (nitrate)	30	1	1	r1	Oxiz	Oxiz_30_r1	vp2_O9	lp4_F3
+O10	Oxiconazole (nitrate)	30	1	2	r2	Oxiz	Oxiz_30_r2	vp2_O10	lp4_F3
+O11	Oxiconazole (nitrate)	0	0	1	r1	Oxiz	Oxiz_0_r1	vp2_O11	lp4_F3
+O12	Oxiconazole (nitrate)	0	0	2	r2	Oxiz	Oxiz_0_r2	vp2_O12	lp4_F3
+O13	Tannic acid	50	5	1	r1	Tnac	Tnac_50_r1	vp2_O13	lp5_G7
+O14	Tannic acid	50	5	2	r2	Tnac	Tnac_50_r2	vp2_O14	lp5_G7
+O15	Tannic acid	40	4	1	r1	Tnac	Tnac_40_r1	vp2_O15	lp5_G7
+O16	Tannic acid	40	4	2	r2	Tnac	Tnac_40_r2	vp2_O16	lp5_G7
+O17	Tannic acid	30	3	1	r1	Tnac	Tnac_30_r1	vp2_O17	lp5_G7
+O18	Tannic acid	30	3	2	r2	Tnac	Tnac_30_r2	vp2_O18	lp5_G7
+O19	Tannic acid	20	2	1	r1	Tnac	Tnac_20_r1	vp2_O19	lp5_G7
+O20	Tannic acid	20	2	2	r2	Tnac	Tnac_20_r2	vp2_O20	lp5_G7
+O21	Tannic acid	10	1	1	r1	Tnac	Tnac_10_r1	vp2_O21	lp5_G7
+O22	Tannic acid	10	1	2	r2	Tnac	Tnac_10_r2	vp2_O22	lp5_G7
+O23	Tannic acid	0	0	1	r1	Tnac	Tnac_0_r1	vp2_O23	lp5_G7
+O24	Tannic acid	0	0	2	r2	Tnac	Tnac_0_r2	vp2_O24	lp5_G7
+P1	Oxiconazole (nitrate)	150	5	3	r3	Oxiz	Oxiz_150_r3	vp2_P1	lp4_F3
+P2	Oxiconazole (nitrate)	150	5	4	r4	Oxiz	Oxiz_150_r4	vp2_P2	lp4_F3
+P3	Oxiconazole (nitrate)	120	4	3	r3	Oxiz	Oxiz_120_r3	vp2_P3	lp4_F3
+P4	Oxiconazole (nitrate)	120	4	4	r4	Oxiz	Oxiz_120_r4	vp2_P4	lp4_F3
+P5	Oxiconazole (nitrate)	90	3	3	r3	Oxiz	Oxiz_90_r3	vp2_P5	lp4_F3
+P6	Oxiconazole (nitrate)	90	3	4	r4	Oxiz	Oxiz_90_r4	vp2_P6	lp4_F3
+P7	Oxiconazole (nitrate)	60	2	3	r3	Oxiz	Oxiz_60_r3	vp2_P7	lp4_F3
+P8	Oxiconazole (nitrate)	60	2	4	r4	Oxiz	Oxiz_60_r4	vp2_P8	lp4_F3
+P9	Oxiconazole (nitrate)	30	1	3	r3	Oxiz	Oxiz_30_r3	vp2_P9	lp4_F3
+P10	Oxiconazole (nitrate)	30	1	4	r4	Oxiz	Oxiz_30_r4	vp2_P10	lp4_F3
+P11	Oxiconazole (nitrate)	0	0	3	r3	Oxiz	Oxiz_0_r3	vp2_P11	lp4_F3
+P12	Oxiconazole (nitrate)	0	0	4	r4	Oxiz	Oxiz_0_r4	vp2_P12	lp4_F3
+P13	Tannic acid	50	5	3	r3	Tnac	Tnac_50_r3	vp2_P13	lp5_G7
+P14	Tannic acid	50	5	4	r4	Tnac	Tnac_50_r4	vp2_P14	lp5_G7
+P15	Tannic acid	40	4	3	r3	Tnac	Tnac_40_r3	vp2_P15	lp5_G7
+P16	Tannic acid	40	4	4	r4	Tnac	Tnac_40_r4	vp2_P16	lp5_G7
+P17	Tannic acid	30	3	3	r3	Tnac	Tnac_30_r3	vp2_P17	lp5_G7
+P18	Tannic acid	30	3	4	r4	Tnac	Tnac_30_r4	vp2_P18	lp5_G7
+P19	Tannic acid	20	2	3	r3	Tnac	Tnac_20_r3	vp2_P19	lp5_G7
+P20	Tannic acid	20	2	4	r4	Tnac	Tnac_20_r4	vp2_P20	lp5_G7
+P21	Tannic acid	10	1	3	r3	Tnac	Tnac_10_r3	vp2_P21	lp5_G7
+P22	Tannic acid	10	1	4	r4	Tnac	Tnac_10_r4	vp2_P22	lp5_G7
+P23	Tannic acid	0	0	3	r3	Tnac	Tnac_0_r3	vp2_P23	lp5_G7
+P24	Tannic acid	0	0	4	r4	Tnac	Tnac_0_r4	vp2_P24	lp5_G7
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									

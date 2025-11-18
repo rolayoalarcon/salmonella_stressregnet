@@ -1,0 +1,571 @@
+well	drug	conc	concMock	quad	rep	abreviation	wellCode	lib_well	srn_code
+A1	Menadione sodium bisulfite	150	5	1	r1	Mena	Mena_150_r1	vp3_A1	lp3_B9
+A2	Menadione sodium bisulfite	150	5	2	r2	Mena	Mena_150_r2	vp3_A2	lp3_B9
+A3	Menadione sodium bisulfite	120	4	1	r1	Mena	Mena_120_r1	vp3_A3	lp3_B9
+A4	Menadione sodium bisulfite	120	4	2	r2	Mena	Mena_120_r2	vp3_A4	lp3_B9
+A5	Menadione sodium bisulfite	90	3	1	r1	Mena	Mena_90_r1	vp3_A5	lp3_B9
+A6	Menadione sodium bisulfite	90	3	2	r2	Mena	Mena_90_r2	vp3_A6	lp3_B9
+A7	Menadione sodium bisulfite	60	2	1	r1	Mena	Mena_60_r1	vp3_A7	lp3_B9
+A8	Menadione sodium bisulfite	60	2	2	r2	Mena	Mena_60_r2	vp3_A8	lp3_B9
+A9	Menadione sodium bisulfite	30	1	1	r1	Mena	Mena_30_r1	vp3_A9	lp3_B9
+A10	Menadione sodium bisulfite	30	1	2	r2	Mena	Mena_30_r2	vp3_A10	lp3_B9
+A11	Menadione sodium bisulfite	0	0	1	r1	Mena	Mena_0_r1	vp3_A11	lp3_B9
+A12	Menadione sodium bisulfite	0	0	2	r2	Mena	Mena_0_r2	vp3_A12	lp3_B9
+A13	Eltrombopag	150	5	1	r1	Eltr	Eltr_150_r1	vp3_A13	lp1_J6
+A14	Eltrombopag	150	5	2	r2	Eltr	Eltr_150_r2	vp3_A14	lp1_J6
+A15	Eltrombopag	120	4	1	r1	Eltr	Eltr_120_r1	vp3_A15	lp1_J6
+A16	Eltrombopag	120	4	2	r2	Eltr	Eltr_120_r2	vp3_A16	lp1_J6
+A17	Eltrombopag	90	3	1	r1	Eltr	Eltr_90_r1	vp3_A17	lp1_J6
+A18	Eltrombopag	90	3	2	r2	Eltr	Eltr_90_r2	vp3_A18	lp1_J6
+A19	Eltrombopag	60	2	1	r1	Eltr	Eltr_60_r1	vp3_A19	lp1_J6
+A20	Eltrombopag	60	2	2	r2	Eltr	Eltr_60_r2	vp3_A20	lp1_J6
+A21	Eltrombopag	30	1	1	r1	Eltr	Eltr_30_r1	vp3_A21	lp1_J6
+A22	Eltrombopag	30	1	2	r2	Eltr	Eltr_30_r2	vp3_A22	lp1_J6
+A23	Eltrombopag	0	0	1	r1	Eltr	Eltr_0_r1	vp3_A23	lp1_J6
+A24	Eltrombopag	0	0	2	r2	Eltr	Eltr_0_r2	vp3_A24	lp1_J6
+B1	Menadione sodium bisulfite	150	5	3	r3	Mena	Mena_150_r3	vp3_B1	lp3_B9
+B2	Menadione sodium bisulfite	150	5	4	r4	Mena	Mena_150_r4	vp3_B2	lp3_B9
+B3	Menadione sodium bisulfite	120	4	3	r3	Mena	Mena_120_r3	vp3_B3	lp3_B9
+B4	Menadione sodium bisulfite	120	4	4	r4	Mena	Mena_120_r4	vp3_B4	lp3_B9
+B5	Menadione sodium bisulfite	90	3	3	r3	Mena	Mena_90_r3	vp3_B5	lp3_B9
+B6	Menadione sodium bisulfite	90	3	4	r4	Mena	Mena_90_r4	vp3_B6	lp3_B9
+B7	Menadione sodium bisulfite	60	2	3	r3	Mena	Mena_60_r3	vp3_B7	lp3_B9
+B8	Menadione sodium bisulfite	60	2	4	r4	Mena	Mena_60_r4	vp3_B8	lp3_B9
+B9	Menadione sodium bisulfite	30	1	3	r3	Mena	Mena_30_r3	vp3_B9	lp3_B9
+B10	Menadione sodium bisulfite	30	1	4	r4	Mena	Mena_30_r4	vp3_B10	lp3_B9
+B11	Menadione sodium bisulfite	0	0	3	r3	Mena	Mena_0_r3	vp3_B11	lp3_B9
+B12	Menadione sodium bisulfite	0	0	4	r4	Mena	Mena_0_r4	vp3_B12	lp3_B9
+B13	Eltrombopag	150	5	3	r3	Eltr	Eltr_150_r3	vp3_B13	lp1_J6
+B14	Eltrombopag	150	5	4	r4	Eltr	Eltr_150_r4	vp3_B14	lp1_J6
+B15	Eltrombopag	120	4	3	r3	Eltr	Eltr_120_r3	vp3_B15	lp1_J6
+B16	Eltrombopag	120	4	4	r4	Eltr	Eltr_120_r4	vp3_B16	lp1_J6
+B17	Eltrombopag	90	3	3	r3	Eltr	Eltr_90_r3	vp3_B17	lp1_J6
+B18	Eltrombopag	90	3	4	r4	Eltr	Eltr_90_r4	vp3_B18	lp1_J6
+B19	Eltrombopag	60	2	3	r3	Eltr	Eltr_60_r3	vp3_B19	lp1_J6
+B20	Eltrombopag	60	2	4	r4	Eltr	Eltr_60_r4	vp3_B20	lp1_J6
+B21	Eltrombopag	30	1	3	r3	Eltr	Eltr_30_r3	vp3_B21	lp1_J6
+B22	Eltrombopag	30	1	4	r4	Eltr	Eltr_30_r4	vp3_B22	lp1_J6
+B23	Eltrombopag	0	0	3	r3	Eltr	Eltr_0_r3	vp3_B23	lp1_J6
+B24	Eltrombopag	0	0	4	r4	Eltr	Eltr_0_r4	vp3_B24	lp1_J6
+C1	Mupirocin	50	5	1	r1	Mupi	Mupi_50_r1	vp3_C1	lp1_P2
+C2	Mupirocin	50	5	2	r2	Mupi	Mupi_50_r2	vp3_C2	lp1_P2
+C3	Mupirocin	40	4	1	r1	Mupi	Mupi_40_r1	vp3_C3	lp1_P2
+C4	Mupirocin	40	4	2	r2	Mupi	Mupi_40_r2	vp3_C4	lp1_P2
+C5	Mupirocin	30	3	1	r1	Mupi	Mupi_30_r1	vp3_C5	lp1_P2
+C6	Mupirocin	30	3	2	r2	Mupi	Mupi_30_r2	vp3_C6	lp1_P2
+C7	Mupirocin	20	2	1	r1	Mupi	Mupi_20_r1	vp3_C7	lp1_P2
+C8	Mupirocin	20	2	2	r2	Mupi	Mupi_20_r2	vp3_C8	lp1_P2
+C9	Mupirocin	10	1	1	r1	Mupi	Mupi_10_r1	vp3_C9	lp1_P2
+C10	Mupirocin	10	1	2	r2	Mupi	Mupi_10_r2	vp3_C10	lp1_P2
+C11	Mupirocin	0	0	1	r1	Mupi	Mupi_0_r1	vp3_C11	lp1_P2
+C12	Mupirocin	0	0	2	r2	Mupi	Mupi_0_r2	vp3_C12	lp1_P2
+C13	Clavulanate	150	5	1	r1	Clav	Clav_150_r1	vp3_C13	lp5_M17
+C14	Clavulanate	150	5	2	r2	Clav	Clav_150_r2	vp3_C14	lp5_M17
+C15	Clavulanate	120	4	1	r1	Clav	Clav_120_r1	vp3_C15	lp5_M17
+C16	Clavulanate	120	4	2	r2	Clav	Clav_120_r2	vp3_C16	lp5_M17
+C17	Clavulanate	90	3	1	r1	Clav	Clav_90_r1	vp3_C17	lp5_M17
+C18	Clavulanate	90	3	2	r2	Clav	Clav_90_r2	vp3_C18	lp5_M17
+C19	Clavulanate	60	2	1	r1	Clav	Clav_60_r1	vp3_C19	lp5_M17
+C20	Clavulanate	60	2	2	r2	Clav	Clav_60_r2	vp3_C20	lp5_M17
+C21	Clavulanate	30	1	1	r1	Clav	Clav_30_r1	vp3_C21	lp5_M17
+C22	Clavulanate	30	1	2	r2	Clav	Clav_30_r2	vp3_C22	lp5_M17
+C23	Clavulanate	0	0	1	r1	Clav	Clav_0_r1	vp3_C23	lp5_M17
+C24	Clavulanate	0	0	2	r2	Clav	Clav_0_r2	vp3_C24	lp5_M17
+D1	Mupirocin	50	5	3	r3	Mupi	Mupi_50_r3	vp3_D1	lp1_P2
+D2	Mupirocin	50	5	4	r4	Mupi	Mupi_50_r4	vp3_D2	lp1_P2
+D3	Mupirocin	40	4	3	r3	Mupi	Mupi_40_r3	vp3_D3	lp1_P2
+D4	Mupirocin	40	4	4	r4	Mupi	Mupi_40_r4	vp3_D4	lp1_P2
+D5	Mupirocin	30	3	3	r3	Mupi	Mupi_30_r3	vp3_D5	lp1_P2
+D6	Mupirocin	30	3	4	r4	Mupi	Mupi_30_r4	vp3_D6	lp1_P2
+D7	Mupirocin	20	2	3	r3	Mupi	Mupi_20_r3	vp3_D7	lp1_P2
+D8	Mupirocin	20	2	4	r4	Mupi	Mupi_20_r4	vp3_D8	lp1_P2
+D9	Mupirocin	10	1	3	r3	Mupi	Mupi_10_r3	vp3_D9	lp1_P2
+D10	Mupirocin	10	1	4	r4	Mupi	Mupi_10_r4	vp3_D10	lp1_P2
+D11	Mupirocin	0	0	3	r3	Mupi	Mupi_0_r3	vp3_D11	lp1_P2
+D12	Mupirocin	0	0	4	r4	Mupi	Mupi_0_r4	vp3_D12	lp1_P2
+D13	Clavulanate	150	5	3	r3	Clav	Clav_150_r3	vp3_D13	lp5_M17
+D14	Clavulanate	150	5	4	r4	Clav	Clav_150_r4	vp3_D14	lp5_M17
+D15	Clavulanate	120	4	3	r3	Clav	Clav_120_r3	vp3_D15	lp5_M17
+D16	Clavulanate	120	4	4	r4	Clav	Clav_120_r4	vp3_D16	lp5_M17
+D17	Clavulanate	90	3	3	r3	Clav	Clav_90_r3	vp3_D17	lp5_M17
+D18	Clavulanate	90	3	4	r4	Clav	Clav_90_r4	vp3_D18	lp5_M17
+D19	Clavulanate	60	2	3	r3	Clav	Clav_60_r3	vp3_D19	lp5_M17
+D20	Clavulanate	60	2	4	r4	Clav	Clav_60_r4	vp3_D20	lp5_M17
+D21	Clavulanate	30	1	3	r3	Clav	Clav_30_r3	vp3_D21	lp5_M17
+D22	Clavulanate	30	1	4	r4	Clav	Clav_30_r4	vp3_D22	lp5_M17
+D23	Clavulanate	0	0	3	r3	Clav	Clav_0_r3	vp3_D23	lp5_M17
+D24	Clavulanate	0	0	4	r4	Clav	Clav_0_r4	vp3_D24	lp5_M17
+E1	Pyrogallol	150	5	1	r1	Pyro	Pyro_150_r1	vp3_E1	lp3_B8
+E2	Pyrogallol	150	5	2	r2	Pyro	Pyro_150_r2	vp3_E2	lp3_B8
+E3	Pyrogallol	120	4	1	r1	Pyro	Pyro_120_r1	vp3_E3	lp3_B8
+E4	Pyrogallol	120	4	2	r2	Pyro	Pyro_120_r2	vp3_E4	lp3_B8
+E5	Pyrogallol	90	3	1	r1	Pyro	Pyro_90_r1	vp3_E5	lp3_B8
+E6	Pyrogallol	90	3	2	r2	Pyro	Pyro_90_r2	vp3_E6	lp3_B8
+E7	Pyrogallol	60	2	1	r1	Pyro	Pyro_60_r1	vp3_E7	lp3_B8
+E8	Pyrogallol	60	2	2	r2	Pyro	Pyro_60_r2	vp3_E8	lp3_B8
+E9	Pyrogallol	30	1	1	r1	Pyro	Pyro_30_r1	vp3_E9	lp3_B8
+E10	Pyrogallol	30	1	2	r2	Pyro	Pyro_30_r2	vp3_E10	lp3_B8
+E11	Pyrogallol	0	0	1	r1	Pyro	Pyro_0_r1	vp3_E11	lp3_B8
+E12	Pyrogallol	0	0	2	r2	Pyro	Pyro_0_r2	vp3_E12	lp3_B8
+E13	Parthenolide	150	5	1	r1	Part	Part_150_r1	vp3_E13	lp3_I6
+E14	Parthenolide	150	5	2	r2	Part	Part_150_r2	vp3_E14	lp3_I6
+E15	Parthenolide	120	4	1	r1	Part	Part_120_r1	vp3_E15	lp3_I6
+E16	Parthenolide	120	4	2	r2	Part	Part_120_r2	vp3_E16	lp3_I6
+E17	Parthenolide	90	3	1	r1	Part	Part_90_r1	vp3_E17	lp3_I6
+E18	Parthenolide	90	3	2	r2	Part	Part_90_r2	vp3_E18	lp3_I6
+E19	Parthenolide	60	2	1	r1	Part	Part_60_r1	vp3_E19	lp3_I6
+E20	Parthenolide	60	2	2	r2	Part	Part_60_r2	vp3_E20	lp3_I6
+E21	Parthenolide	30	1	1	r1	Part	Part_30_r1	vp3_E21	lp3_I6
+E22	Parthenolide	30	1	2	r2	Part	Part_30_r2	vp3_E22	lp3_I6
+E23	Parthenolide	0	0	1	r1	Part	Part_0_r1	vp3_E23	lp3_I6
+E24	Parthenolide	0	0	2	r2	Part	Part_0_r2	vp3_E24	lp3_I6
+F1	Pyrogallol	150	5	3	r3	Pyro	Pyro_150_r3	vp3_F1	lp3_B8
+F2	Pyrogallol	150	5	4	r4	Pyro	Pyro_150_r4	vp3_F2	lp3_B8
+F3	Pyrogallol	120	4	3	r3	Pyro	Pyro_120_r3	vp3_F3	lp3_B8
+F4	Pyrogallol	120	4	4	r4	Pyro	Pyro_120_r4	vp3_F4	lp3_B8
+F5	Pyrogallol	90	3	3	r3	Pyro	Pyro_90_r3	vp3_F5	lp3_B8
+F6	Pyrogallol	90	3	4	r4	Pyro	Pyro_90_r4	vp3_F6	lp3_B8
+F7	Pyrogallol	60	2	3	r3	Pyro	Pyro_60_r3	vp3_F7	lp3_B8
+F8	Pyrogallol	60	2	4	r4	Pyro	Pyro_60_r4	vp3_F8	lp3_B8
+F9	Pyrogallol	30	1	3	r3	Pyro	Pyro_30_r3	vp3_F9	lp3_B8
+F10	Pyrogallol	30	1	4	r4	Pyro	Pyro_30_r4	vp3_F10	lp3_B8
+F11	Pyrogallol	0	0	3	r3	Pyro	Pyro_0_r3	vp3_F11	lp3_B8
+F12	Pyrogallol	0	0	4	r4	Pyro	Pyro_0_r4	vp3_F12	lp3_B8
+F13	Parthenolide	150	5	3	r3	Part	Part_150_r3	vp3_F13	lp3_I6
+F14	Parthenolide	150	5	4	r4	Part	Part_150_r4	vp3_F14	lp3_I6
+F15	Parthenolide	120	4	3	r3	Part	Part_120_r3	vp3_F15	lp3_I6
+F16	Parthenolide	120	4	4	r4	Part	Part_120_r4	vp3_F16	lp3_I6
+F17	Parthenolide	90	3	3	r3	Part	Part_90_r3	vp3_F17	lp3_I6
+F18	Parthenolide	90	3	4	r4	Part	Part_90_r4	vp3_F18	lp3_I6
+F19	Parthenolide	60	2	3	r3	Part	Part_60_r3	vp3_F19	lp3_I6
+F20	Parthenolide	60	2	4	r4	Part	Part_60_r4	vp3_F20	lp3_I6
+F21	Parthenolide	30	1	3	r3	Part	Part_30_r3	vp3_F21	lp3_I6
+F22	Parthenolide	30	1	4	r4	Part	Part_30_r4	vp3_F22	lp3_I6
+F23	Parthenolide	0	0	3	r3	Part	Part_0_r3	vp3_F23	lp3_I6
+F24	Parthenolide	0	0	4	r4	Part	Part_0_r4	vp3_F24	lp3_I6
+G1	Clomipramine	150	5	1	r1	Clom	Clom_150_r1	vp3_G1	lp1_K1
+G2	Clomipramine	150	5	2	r2	Clom	Clom_150_r2	vp3_G2	lp1_K1
+G3	Clomipramine	120	4	1	r1	Clom	Clom_120_r1	vp3_G3	lp1_K1
+G4	Clomipramine	120	4	2	r2	Clom	Clom_120_r2	vp3_G4	lp1_K1
+G5	Clomipramine	90	3	1	r1	Clom	Clom_90_r1	vp3_G5	lp1_K1
+G6	Clomipramine	90	3	2	r2	Clom	Clom_90_r2	vp3_G6	lp1_K1
+G7	Clomipramine	60	2	1	r1	Clom	Clom_60_r1	vp3_G7	lp1_K1
+G8	Clomipramine	60	2	2	r2	Clom	Clom_60_r2	vp3_G8	lp1_K1
+G9	Clomipramine	30	1	1	r1	Clom	Clom_30_r1	vp3_G9	lp1_K1
+G10	Clomipramine	30	1	2	r2	Clom	Clom_30_r2	vp3_G10	lp1_K1
+G11	Clomipramine	0	0	1	r1	Clom	Clom_0_r1	vp3_G11	lp1_K1
+G12	Clomipramine	0	0	2	r2	Clom	Clom_0_r2	vp3_G12	lp1_K1
+G13	Nafamostat	150	5	1	r1	Nafa	Nafa_150_r1	vp3_G13	lp2_C1
+G14	Nafamostat	150	5	2	r2	Nafa	Nafa_150_r2	vp3_G14	lp2_C1
+G15	Nafamostat	120	4	1	r1	Nafa	Nafa_120_r1	vp3_G15	lp2_C1
+G16	Nafamostat	120	4	2	r2	Nafa	Nafa_120_r2	vp3_G16	lp2_C1
+G17	Nafamostat	90	3	1	r1	Nafa	Nafa_90_r1	vp3_G17	lp2_C1
+G18	Nafamostat	90	3	2	r2	Nafa	Nafa_90_r2	vp3_G18	lp2_C1
+G19	Nafamostat	60	2	1	r1	Nafa	Nafa_60_r1	vp3_G19	lp2_C1
+G20	Nafamostat	60	2	2	r2	Nafa	Nafa_60_r2	vp3_G20	lp2_C1
+G21	Nafamostat	30	1	1	r1	Nafa	Nafa_30_r1	vp3_G21	lp2_C1
+G22	Nafamostat	30	1	2	r2	Nafa	Nafa_30_r2	vp3_G22	lp2_C1
+G23	Nafamostat	0	0	1	r1	Nafa	Nafa_0_r1	vp3_G23	lp2_C1
+G24	Nafamostat	0	0	2	r2	Nafa	Nafa_0_r2	vp3_G24	lp2_C1
+H1	Clomipramine	150	5	3	r3	Clom	Clom_150_r3	vp3_H1	lp1_K1
+H2	Clomipramine	150	5	4	r4	Clom	Clom_150_r4	vp3_H2	lp1_K1
+H3	Clomipramine	120	4	3	r3	Clom	Clom_120_r3	vp3_H3	lp1_K1
+H4	Clomipramine	120	4	4	r4	Clom	Clom_120_r4	vp3_H4	lp1_K1
+H5	Clomipramine	90	3	3	r3	Clom	Clom_90_r3	vp3_H5	lp1_K1
+H6	Clomipramine	90	3	4	r4	Clom	Clom_90_r4	vp3_H6	lp1_K1
+H7	Clomipramine	60	2	3	r3	Clom	Clom_60_r3	vp3_H7	lp1_K1
+H8	Clomipramine	60	2	4	r4	Clom	Clom_60_r4	vp3_H8	lp1_K1
+H9	Clomipramine	30	1	3	r3	Clom	Clom_30_r3	vp3_H9	lp1_K1
+H10	Clomipramine	30	1	4	r4	Clom	Clom_30_r4	vp3_H10	lp1_K1
+H11	Clomipramine	0	0	3	r3	Clom	Clom_0_r3	vp3_H11	lp1_K1
+H12	Clomipramine	0	0	4	r4	Clom	Clom_0_r4	vp3_H12	lp1_K1
+H13	Nafamostat	150	5	3	r3	Nafa	Nafa_150_r3	vp3_H13	lp2_C1
+H14	Nafamostat	150	5	4	r4	Nafa	Nafa_150_r4	vp3_H14	lp2_C1
+H15	Nafamostat	120	4	3	r3	Nafa	Nafa_120_r3	vp3_H15	lp2_C1
+H16	Nafamostat	120	4	4	r4	Nafa	Nafa_120_r4	vp3_H16	lp2_C1
+H17	Nafamostat	90	3	3	r3	Nafa	Nafa_90_r3	vp3_H17	lp2_C1
+H18	Nafamostat	90	3	4	r4	Nafa	Nafa_90_r4	vp3_H18	lp2_C1
+H19	Nafamostat	60	2	3	r3	Nafa	Nafa_60_r3	vp3_H19	lp2_C1
+H20	Nafamostat	60	2	4	r4	Nafa	Nafa_60_r4	vp3_H20	lp2_C1
+H21	Nafamostat	30	1	3	r3	Nafa	Nafa_30_r3	vp3_H21	lp2_C1
+H22	Nafamostat	30	1	4	r4	Nafa	Nafa_30_r4	vp3_H22	lp2_C1
+H23	Nafamostat	0	0	3	r3	Nafa	Nafa_0_r3	vp3_H23	lp2_C1
+H24	Nafamostat	0	0	4	r4	Nafa	Nafa_0_r4	vp3_H24	lp2_C1
+I1	Tryhexyphenidyl	150	5	1	r1	Thpd	Thpd_150_r1	vp3_I1	lp5_O3
+I2	Tryhexyphenidyl	150	5	2	r2	Thpd	Thpd_150_r2	vp3_I2	lp5_O3
+I3	Tryhexyphenidyl	120	4	1	r1	Thpd	Thpd_120_r1	vp3_I3	lp5_O3
+I4	Tryhexyphenidyl	120	4	2	r2	Thpd	Thpd_120_r2	vp3_I4	lp5_O3
+I5	Tryhexyphenidyl	90	3	1	r1	Thpd	Thpd_90_r1	vp3_I5	lp5_O3
+I6	Tryhexyphenidyl	90	3	2	r2	Thpd	Thpd_90_r2	vp3_I6	lp5_O3
+I7	Tryhexyphenidyl	60	2	1	r1	Thpd	Thpd_60_r1	vp3_I7	lp5_O3
+I8	Tryhexyphenidyl	60	2	2	r2	Thpd	Thpd_60_r2	vp3_I8	lp5_O3
+I9	Tryhexyphenidyl	30	1	1	r1	Thpd	Thpd_30_r1	vp3_I9	lp5_O3
+I10	Tryhexyphenidyl	30	1	2	r2	Thpd	Thpd_30_r2	vp3_I10	lp5_O3
+I11	Tryhexyphenidyl	0	0	1	r1	Thpd	Thpd_0_r1	vp3_I11	lp5_O3
+I12	Tryhexyphenidyl	0	0	2	r2	Thpd	Thpd_0_r2	vp3_I12	lp5_O3
+I13	Pentamidine	150	5	1	r1	Pent	Pent_150_r1	vp3_I13	lp5_J21
+I14	Pentamidine	150	5	2	r2	Pent	Pent_150_r2	vp3_I14	lp5_J21
+I15	Pentamidine	120	4	1	r1	Pent	Pent_120_r1	vp3_I15	lp5_J21
+I16	Pentamidine	120	4	2	r2	Pent	Pent_120_r2	vp3_I16	lp5_J21
+I17	Pentamidine	90	3	1	r1	Pent	Pent_90_r1	vp3_I17	lp5_J21
+I18	Pentamidine	90	3	2	r2	Pent	Pent_90_r2	vp3_I18	lp5_J21
+I19	Pentamidine	60	2	1	r1	Pent	Pent_60_r1	vp3_I19	lp5_J21
+I20	Pentamidine	60	2	2	r2	Pent	Pent_60_r2	vp3_I20	lp5_J21
+I21	Pentamidine	30	1	1	r1	Pent	Pent_30_r1	vp3_I21	lp5_J21
+I22	Pentamidine	30	1	2	r2	Pent	Pent_30_r2	vp3_I22	lp5_J21
+I23	Pentamidine	0	0	1	r1	Pent	Pent_0_r1	vp3_I23	lp5_J21
+I24	Pentamidine	0	0	2	r2	Pent	Pent_0_r2	vp3_I24	lp5_J21
+J1	Tryhexyphenidyl	150	5	3	r3	Thpd	Thpd_150_r3	vp3_J1	lp5_O3
+J2	Tryhexyphenidyl	150	5	4	r4	Thpd	Thpd_150_r4	vp3_J2	lp5_O3
+J3	Tryhexyphenidyl	120	4	3	r3	Thpd	Thpd_120_r3	vp3_J3	lp5_O3
+J4	Tryhexyphenidyl	120	4	4	r4	Thpd	Thpd_120_r4	vp3_J4	lp5_O3
+J5	Tryhexyphenidyl	90	3	3	r3	Thpd	Thpd_90_r3	vp3_J5	lp5_O3
+J6	Tryhexyphenidyl	90	3	4	r4	Thpd	Thpd_90_r4	vp3_J6	lp5_O3
+J7	Tryhexyphenidyl	60	2	3	r3	Thpd	Thpd_60_r3	vp3_J7	lp5_O3
+J8	Tryhexyphenidyl	60	2	4	r4	Thpd	Thpd_60_r4	vp3_J8	lp5_O3
+J9	Tryhexyphenidyl	30	1	3	r3	Thpd	Thpd_30_r3	vp3_J9	lp5_O3
+J10	Tryhexyphenidyl	30	1	4	r4	Thpd	Thpd_30_r4	vp3_J10	lp5_O3
+J11	Tryhexyphenidyl	0	0	3	r3	Thpd	Thpd_0_r3	vp3_J11	lp5_O3
+J12	Tryhexyphenidyl	0	0	4	r4	Thpd	Thpd_0_r4	vp3_J12	lp5_O3
+J13	Pentamidine	150	5	3	r3	Pent	Pent_150_r3	vp3_J13	lp5_J21
+J14	Pentamidine	150	5	4	r4	Pent	Pent_150_r4	vp3_J14	lp5_J21
+J15	Pentamidine	120	4	3	r3	Pent	Pent_120_r3	vp3_J15	lp5_J21
+J16	Pentamidine	120	4	4	r4	Pent	Pent_120_r4	vp3_J16	lp5_J21
+J17	Pentamidine	90	3	3	r3	Pent	Pent_90_r3	vp3_J17	lp5_J21
+J18	Pentamidine	90	3	4	r4	Pent	Pent_90_r4	vp3_J18	lp5_J21
+J19	Pentamidine	60	2	3	r3	Pent	Pent_60_r3	vp3_J19	lp5_J21
+J20	Pentamidine	60	2	4	r4	Pent	Pent_60_r4	vp3_J20	lp5_J21
+J21	Pentamidine	30	1	3	r3	Pent	Pent_30_r3	vp3_J21	lp5_J21
+J22	Pentamidine	30	1	4	r4	Pent	Pent_30_r4	vp3_J22	lp5_J21
+J23	Pentamidine	0	0	3	r3	Pent	Pent_0_r3	vp3_J23	lp5_J21
+J24	Pentamidine	0	0	4	r4	Pent	Pent_0_r4	vp3_J24	lp5_J21
+K1	Ajmaline	150	5	1	r1	Ajma	Ajma_150_r1	vp3_K1	lp5_L7
+K2	Ajmaline	150	5	2	r2	Ajma	Ajma_150_r2	vp3_K2	lp5_L7
+K3	Ajmaline	120	4	1	r1	Ajma	Ajma_120_r1	vp3_K3	lp5_L7
+K4	Ajmaline	120	4	2	r2	Ajma	Ajma_120_r2	vp3_K4	lp5_L7
+K5	Ajmaline	90	3	1	r1	Ajma	Ajma_90_r1	vp3_K5	lp5_L7
+K6	Ajmaline	90	3	2	r2	Ajma	Ajma_90_r2	vp3_K6	lp5_L7
+K7	Ajmaline	60	2	1	r1	Ajma	Ajma_60_r1	vp3_K7	lp5_L7
+K8	Ajmaline	60	2	2	r2	Ajma	Ajma_60_r2	vp3_K8	lp5_L7
+K9	Ajmaline	30	1	1	r1	Ajma	Ajma_30_r1	vp3_K9	lp5_L7
+K10	Ajmaline	30	1	2	r2	Ajma	Ajma_30_r2	vp3_K10	lp5_L7
+K11	Ajmaline	0	0	1	r1	Ajma	Ajma_0_r1	vp3_K11	lp5_L7
+K12	Ajmaline	0	0	2	r2	Ajma	Ajma_0_r2	vp3_K12	lp5_L7
+K13	Etidronic acid	150	5	1	r1	Etac	Etac_150_r1	vp3_K13	lp7_K5
+K14	Etidronic acid	150	5	2	r2	Etac	Etac_150_r2	vp3_K14	lp7_K5
+K15	Etidronic acid	120	4	1	r1	Etac	Etac_120_r1	vp3_K15	lp7_K5
+K16	Etidronic acid	120	4	2	r2	Etac	Etac_120_r2	vp3_K16	lp7_K5
+K17	Etidronic acid	90	3	1	r1	Etac	Etac_90_r1	vp3_K17	lp7_K5
+K18	Etidronic acid	90	3	2	r2	Etac	Etac_90_r2	vp3_K18	lp7_K5
+K19	Etidronic acid	60	2	1	r1	Etac	Etac_60_r1	vp3_K19	lp7_K5
+K20	Etidronic acid	60	2	2	r2	Etac	Etac_60_r2	vp3_K20	lp7_K5
+K21	Etidronic acid	30	1	1	r1	Etac	Etac_30_r1	vp3_K21	lp7_K5
+K22	Etidronic acid	30	1	2	r2	Etac	Etac_30_r2	vp3_K22	lp7_K5
+K23	Etidronic acid	0	0	1	r1	Etac	Etac_0_r1	vp3_K23	lp7_K5
+K24	Etidronic acid	0	0	2	r2	Etac	Etac_0_r2	vp3_K24	lp7_K5
+L1	Ajmaline	150	5	3	r3	Ajma	Ajma_150_r3	vp3_L1	lp5_L7
+L2	Ajmaline	150	5	4	r4	Ajma	Ajma_150_r4	vp3_L2	lp5_L7
+L3	Ajmaline	120	4	3	r3	Ajma	Ajma_120_r3	vp3_L3	lp5_L7
+L4	Ajmaline	120	4	4	r4	Ajma	Ajma_120_r4	vp3_L4	lp5_L7
+L5	Ajmaline	90	3	3	r3	Ajma	Ajma_90_r3	vp3_L5	lp5_L7
+L6	Ajmaline	90	3	4	r4	Ajma	Ajma_90_r4	vp3_L6	lp5_L7
+L7	Ajmaline	60	2	3	r3	Ajma	Ajma_60_r3	vp3_L7	lp5_L7
+L8	Ajmaline	60	2	4	r4	Ajma	Ajma_60_r4	vp3_L8	lp5_L7
+L9	Ajmaline	30	1	3	r3	Ajma	Ajma_30_r3	vp3_L9	lp5_L7
+L10	Ajmaline	30	1	4	r4	Ajma	Ajma_30_r4	vp3_L10	lp5_L7
+L11	Ajmaline	0	0	3	r3	Ajma	Ajma_0_r3	vp3_L11	lp5_L7
+L12	Ajmaline	0	0	4	r4	Ajma	Ajma_0_r4	vp3_L12	lp5_L7
+L13	Etidronic acid	150	5	3	r3	Etac	Etac_150_r3	vp3_L13	lp7_K5
+L14	Etidronic acid	150	5	4	r4	Etac	Etac_150_r4	vp3_L14	lp7_K5
+L15	Etidronic acid	120	4	3	r3	Etac	Etac_120_r3	vp3_L15	lp7_K5
+L16	Etidronic acid	120	4	4	r4	Etac	Etac_120_r4	vp3_L16	lp7_K5
+L17	Etidronic acid	90	3	3	r3	Etac	Etac_90_r3	vp3_L17	lp7_K5
+L18	Etidronic acid	90	3	4	r4	Etac	Etac_90_r4	vp3_L18	lp7_K5
+L19	Etidronic acid	60	2	3	r3	Etac	Etac_60_r3	vp3_L19	lp7_K5
+L20	Etidronic acid	60	2	4	r4	Etac	Etac_60_r4	vp3_L20	lp7_K5
+L21	Etidronic acid	30	1	3	r3	Etac	Etac_30_r3	vp3_L21	lp7_K5
+L22	Etidronic acid	30	1	4	r4	Etac	Etac_30_r4	vp3_L22	lp7_K5
+L23	Etidronic acid	0	0	3	r3	Etac	Etac_0_r3	vp3_L23	lp7_K5
+L24	Etidronic acid	0	0	4	r4	Etac	Etac_0_r4	vp3_L24	lp7_K5
+M1	Alprenolol	150	5	1	r1	Alpr	Alpr_150_r1	vp3_M1	lp1_D3
+M2	Alprenolol	150	5	2	r2	Alpr	Alpr_150_r2	vp3_M2	lp1_D3
+M3	Alprenolol	120	4	1	r1	Alpr	Alpr_120_r1	vp3_M3	lp1_D3
+M4	Alprenolol	120	4	2	r2	Alpr	Alpr_120_r2	vp3_M4	lp1_D3
+M5	Alprenolol	90	3	1	r1	Alpr	Alpr_90_r1	vp3_M5	lp1_D3
+M6	Alprenolol	90	3	2	r2	Alpr	Alpr_90_r2	vp3_M6	lp1_D3
+M7	Alprenolol	60	2	1	r1	Alpr	Alpr_60_r1	vp3_M7	lp1_D3
+M8	Alprenolol	60	2	2	r2	Alpr	Alpr_60_r2	vp3_M8	lp1_D3
+M9	Alprenolol	30	1	1	r1	Alpr	Alpr_30_r1	vp3_M9	lp1_D3
+M10	Alprenolol	30	1	2	r2	Alpr	Alpr_30_r2	vp3_M10	lp1_D3
+M11	Alprenolol	0	0	1	r1	Alpr	Alpr_0_r1	vp3_M11	lp1_D3
+M12	Alprenolol	0	0	2	r2	Alpr	Alpr_0_r2	vp3_M12	lp1_D3
+M13	Didanosine	150	5	1	r1	Dida	Dida_150_r1	vp3_M13	lp1_J16
+M14	Didanosine	150	5	2	r2	Dida	Dida_150_r2	vp3_M14	lp1_J16
+M15	Didanosine	120	4	1	r1	Dida	Dida_120_r1	vp3_M15	lp1_J16
+M16	Didanosine	120	4	2	r2	Dida	Dida_120_r2	vp3_M16	lp1_J16
+M17	Didanosine	90	3	1	r1	Dida	Dida_90_r1	vp3_M17	lp1_J16
+M18	Didanosine	90	3	2	r2	Dida	Dida_90_r2	vp3_M18	lp1_J16
+M19	Didanosine	60	2	1	r1	Dida	Dida_60_r1	vp3_M19	lp1_J16
+M20	Didanosine	60	2	2	r2	Dida	Dida_60_r2	vp3_M20	lp1_J16
+M21	Didanosine	30	1	1	r1	Dida	Dida_30_r1	vp3_M21	lp1_J16
+M22	Didanosine	30	1	2	r2	Dida	Dida_30_r2	vp3_M22	lp1_J16
+M23	Didanosine	0	0	1	r1	Dida	Dida_0_r1	vp3_M23	lp1_J16
+M24	Didanosine	0	0	2	r2	Dida	Dida_0_r2	vp3_M24	lp1_J16
+N1	Alprenolol	150	5	3	r3	Alpr	Alpr_150_r3	vp3_N1	lp1_D3
+N2	Alprenolol	150	5	4	r4	Alpr	Alpr_150_r4	vp3_N2	lp1_D3
+N3	Alprenolol	120	4	3	r3	Alpr	Alpr_120_r3	vp3_N3	lp1_D3
+N4	Alprenolol	120	4	4	r4	Alpr	Alpr_120_r4	vp3_N4	lp1_D3
+N5	Alprenolol	90	3	3	r3	Alpr	Alpr_90_r3	vp3_N5	lp1_D3
+N6	Alprenolol	90	3	4	r4	Alpr	Alpr_90_r4	vp3_N6	lp1_D3
+N7	Alprenolol	60	2	3	r3	Alpr	Alpr_60_r3	vp3_N7	lp1_D3
+N8	Alprenolol	60	2	4	r4	Alpr	Alpr_60_r4	vp3_N8	lp1_D3
+N9	Alprenolol	30	1	3	r3	Alpr	Alpr_30_r3	vp3_N9	lp1_D3
+N10	Alprenolol	30	1	4	r4	Alpr	Alpr_30_r4	vp3_N10	lp1_D3
+N11	Alprenolol	0	0	3	r3	Alpr	Alpr_0_r3	vp3_N11	lp1_D3
+N12	Alprenolol	0	0	4	r4	Alpr	Alpr_0_r4	vp3_N12	lp1_D3
+N13	Didanosine	150	5	3	r3	Dida	Dida_150_r3	vp3_N13	lp1_J16
+N14	Didanosine	150	5	4	r4	Dida	Dida_150_r4	vp3_N14	lp1_J16
+N15	Didanosine	120	4	3	r3	Dida	Dida_120_r3	vp3_N15	lp1_J16
+N16	Didanosine	120	4	4	r4	Dida	Dida_120_r4	vp3_N16	lp1_J16
+N17	Didanosine	90	3	3	r3	Dida	Dida_90_r3	vp3_N17	lp1_J16
+N18	Didanosine	90	3	4	r4	Dida	Dida_90_r4	vp3_N18	lp1_J16
+N19	Didanosine	60	2	3	r3	Dida	Dida_60_r3	vp3_N19	lp1_J16
+N20	Didanosine	60	2	4	r4	Dida	Dida_60_r4	vp3_N20	lp1_J16
+N21	Didanosine	30	1	3	r3	Dida	Dida_30_r3	vp3_N21	lp1_J16
+N22	Didanosine	30	1	4	r4	Dida	Dida_30_r4	vp3_N22	lp1_J16
+N23	Didanosine	0	0	3	r3	Dida	Dida_0_r3	vp3_N23	lp1_J16
+N24	Didanosine	0	0	4	r4	Dida	Dida_0_r4	vp3_N24	lp1_J16
+O1	Dantrolene	150	5	1	r1	Dant	Dant_150_r1	vp3_O1	lp1_O22
+O2	Dantrolene	150	5	2	r2	Dant	Dant_150_r2	vp3_O2	lp1_O22
+O3	Dantrolene	120	4	1	r1	Dant	Dant_120_r1	vp3_O3	lp1_O22
+O4	Dantrolene	120	4	2	r2	Dant	Dant_120_r2	vp3_O4	lp1_O22
+O5	Dantrolene	90	3	1	r1	Dant	Dant_90_r1	vp3_O5	lp1_O22
+O6	Dantrolene	90	3	2	r2	Dant	Dant_90_r2	vp3_O6	lp1_O22
+O7	Dantrolene	60	2	1	r1	Dant	Dant_60_r1	vp3_O7	lp1_O22
+O8	Dantrolene	60	2	2	r2	Dant	Dant_60_r2	vp3_O8	lp1_O22
+O9	Dantrolene	30	1	1	r1	Dant	Dant_30_r1	vp3_O9	lp1_O22
+O10	Dantrolene	30	1	2	r2	Dant	Dant_30_r2	vp3_O10	lp1_O22
+O11	Dantrolene	0	0	1	r1	Dant	Dant_0_r1	vp3_O11	lp1_O22
+O12	Dantrolene	0	0	2	r2	Dant	Dant_0_r2	vp3_O12	lp1_O22
+O13	Visomitin	50	5	1	r1	Viso	Viso_50_r1	vp3_O13	lp5_L22
+O14	Visomitin	50	5	2	r2	Viso	Viso_50_r2	vp3_O14	lp5_L22
+O15	Visomitin	40	4	1	r1	Viso	Viso_40_r1	vp3_O15	lp5_L22
+O16	Visomitin	40	4	2	r2	Viso	Viso_40_r2	vp3_O16	lp5_L22
+O17	Visomitin	30	3	1	r1	Viso	Viso_30_r1	vp3_O17	lp5_L22
+O18	Visomitin	30	3	2	r2	Viso	Viso_30_r2	vp3_O18	lp5_L22
+O19	Visomitin	20	2	1	r1	Viso	Viso_20_r1	vp3_O19	lp5_L22
+O20	Visomitin	20	2	2	r2	Viso	Viso_20_r2	vp3_O20	lp5_L22
+O21	Visomitin	10	1	1	r1	Viso	Viso_10_r1	vp3_O21	lp5_L22
+O22	Visomitin	10	1	2	r2	Viso	Viso_10_r2	vp3_O22	lp5_L22
+O23	Visomitin	0	0	1	r1	Viso	Viso_0_r1	vp3_O23	lp5_L22
+O24	Visomitin	0	0	2	r2	Viso	Viso_0_r2	vp3_O24	lp5_L22
+P1	Dantrolene	150	5	3	r3	Dant	Dant_150_r3	vp3_P1	lp1_O22
+P2	Dantrolene	150	5	4	r4	Dant	Dant_150_r4	vp3_P2	lp1_O22
+P3	Dantrolene	120	4	3	r3	Dant	Dant_120_r3	vp3_P3	lp1_O22
+P4	Dantrolene	120	4	4	r4	Dant	Dant_120_r4	vp3_P4	lp1_O22
+P5	Dantrolene	90	3	3	r3	Dant	Dant_90_r3	vp3_P5	lp1_O22
+P6	Dantrolene	90	3	4	r4	Dant	Dant_90_r4	vp3_P6	lp1_O22
+P7	Dantrolene	60	2	3	r3	Dant	Dant_60_r3	vp3_P7	lp1_O22
+P8	Dantrolene	60	2	4	r4	Dant	Dant_60_r4	vp3_P8	lp1_O22
+P9	Dantrolene	30	1	3	r3	Dant	Dant_30_r3	vp3_P9	lp1_O22
+P10	Dantrolene	30	1	4	r4	Dant	Dant_30_r4	vp3_P10	lp1_O22
+P11	Dantrolene	0	0	3	r3	Dant	Dant_0_r3	vp3_P11	lp1_O22
+P12	Dantrolene	0	0	4	r4	Dant	Dant_0_r4	vp3_P12	lp1_O22
+P13	Visomitin	50	5	3	r3	Viso	Viso_50_r3	vp3_P13	lp5_L22
+P14	Visomitin	50	5	4	r4	Viso	Viso_50_r4	vp3_P14	lp5_L22
+P15	Visomitin	40	4	3	r3	Viso	Viso_40_r3	vp3_P15	lp5_L22
+P16	Visomitin	40	4	4	r4	Viso	Viso_40_r4	vp3_P16	lp5_L22
+P17	Visomitin	30	3	3	r3	Viso	Viso_30_r3	vp3_P17	lp5_L22
+P18	Visomitin	30	3	4	r4	Viso	Viso_30_r4	vp3_P18	lp5_L22
+P19	Visomitin	20	2	3	r3	Viso	Viso_20_r3	vp3_P19	lp5_L22
+P20	Visomitin	20	2	4	r4	Viso	Viso_20_r4	vp3_P20	lp5_L22
+P21	Visomitin	10	1	3	r3	Viso	Viso_10_r3	vp3_P21	lp5_L22
+P22	Visomitin	10	1	4	r4	Viso	Viso_10_r4	vp3_P22	lp5_L22
+P23	Visomitin	0	0	3	r3	Viso	Viso_0_r3	vp3_P23	lp5_L22
+P24	Visomitin	0	0	4	r4	Viso	Viso_0_r4	vp3_P24	lp5_L22
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									

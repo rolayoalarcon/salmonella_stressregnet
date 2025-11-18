@@ -1,0 +1,571 @@
+well	drug	conc	concMock	quad	rep	abreviation	wellCode	lib_well	srn_code
+A1	Isoconazole (nitrate)	150	5	1	r1	Isoc	Isoc_150_r1	vp1_A1	lp6_I16
+A2	Isoconazole (nitrate)	150	5	2	r2	Isoc	Isoc_150_r2	vp1_A2	lp6_I16
+A3	Isoconazole (nitrate)	120	4	1	r1	Isoc	Isoc_120_r1	vp1_A3	lp6_I16
+A4	Isoconazole (nitrate)	120	4	2	r2	Isoc	Isoc_120_r2	vp1_A4	lp6_I16
+A5	Isoconazole (nitrate)	90	3	1	r1	Isoc	Isoc_90_r1	vp1_A5	lp6_I16
+A6	Isoconazole (nitrate)	90	3	2	r2	Isoc	Isoc_90_r2	vp1_A6	lp6_I16
+A7	Isoconazole (nitrate)	60	2	1	r1	Isoc	Isoc_60_r1	vp1_A7	lp6_I16
+A8	Isoconazole (nitrate)	60	2	2	r2	Isoc	Isoc_60_r2	vp1_A8	lp6_I16
+A9	Isoconazole (nitrate)	30	1	1	r1	Isoc	Isoc_30_r1	vp1_A9	lp6_I16
+A10	Isoconazole (nitrate)	30	1	2	r2	Isoc	Isoc_30_r2	vp1_A10	lp6_I16
+A11	Isoconazole (nitrate)	0	0	1	r1	Isoc	Isoc_0_r1	vp1_A11	lp6_I16
+A12	Isoconazole (nitrate)	0	0	2	r2	Isoc	Isoc_0_r2	vp1_A12	lp6_I16
+A13	Trimethoprim	50	5	1	r1	Tpri	Tpri_50_r1	vp1_A13	lp6_M22
+A14	Trimethoprim	50	5	2	r2	Tpri	Tpri_50_r2	vp1_A14	lp6_M22
+A15	Trimethoprim	40	4	1	r1	Tpri	Tpri_40_r1	vp1_A15	lp6_M22
+A16	Trimethoprim	40	4	2	r2	Tpri	Tpri_40_r2	vp1_A16	lp6_M22
+A17	Trimethoprim	30	3	1	r1	Tpri	Tpri_30_r1	vp1_A17	lp6_M22
+A18	Trimethoprim	30	3	2	r2	Tpri	Tpri_30_r2	vp1_A18	lp6_M22
+A19	Trimethoprim	20	2	1	r1	Tpri	Tpri_20_r1	vp1_A19	lp6_M22
+A20	Trimethoprim	20	2	2	r2	Tpri	Tpri_20_r2	vp1_A20	lp6_M22
+A21	Trimethoprim	10	1	1	r1	Tpri	Tpri_10_r1	vp1_A21	lp6_M22
+A22	Trimethoprim	10	1	2	r2	Tpri	Tpri_10_r2	vp1_A22	lp6_M22
+A23	Trimethoprim	0	0	1	r1	Tpri	Tpri_0_r1	vp1_A23	lp6_M22
+A24	Trimethoprim	0	0	2	r2	Tpri	Tpri_0_r2	vp1_A24	lp6_M22
+B1	Isoconazole (nitrate)	150	5	3	r3	Isoc	Isoc_150_r3	vp1_B1	lp6_I16
+B2	Isoconazole (nitrate)	150	5	4	r4	Isoc	Isoc_150_r4	vp1_B2	lp6_I16
+B3	Isoconazole (nitrate)	120	4	3	r3	Isoc	Isoc_120_r3	vp1_B3	lp6_I16
+B4	Isoconazole (nitrate)	120	4	4	r4	Isoc	Isoc_120_r4	vp1_B4	lp6_I16
+B5	Isoconazole (nitrate)	90	3	3	r3	Isoc	Isoc_90_r3	vp1_B5	lp6_I16
+B6	Isoconazole (nitrate)	90	3	4	r4	Isoc	Isoc_90_r4	vp1_B6	lp6_I16
+B7	Isoconazole (nitrate)	60	2	3	r3	Isoc	Isoc_60_r3	vp1_B7	lp6_I16
+B8	Isoconazole (nitrate)	60	2	4	r4	Isoc	Isoc_60_r4	vp1_B8	lp6_I16
+B9	Isoconazole (nitrate)	30	1	3	r3	Isoc	Isoc_30_r3	vp1_B9	lp6_I16
+B10	Isoconazole (nitrate)	30	1	4	r4	Isoc	Isoc_30_r4	vp1_B10	lp6_I16
+B11	Isoconazole (nitrate)	0	0	3	r3	Isoc	Isoc_0_r3	vp1_B11	lp6_I16
+B12	Isoconazole (nitrate)	0	0	4	r4	Isoc	Isoc_0_r4	vp1_B12	lp6_I16
+B13	Trimethoprim	50	5	3	r3	Tpri	Tpri_50_r3	vp1_B13	lp6_M22
+B14	Trimethoprim	50	5	4	r4	Tpri	Tpri_50_r4	vp1_B14	lp6_M22
+B15	Trimethoprim	40	4	3	r3	Tpri	Tpri_40_r3	vp1_B15	lp6_M22
+B16	Trimethoprim	40	4	4	r4	Tpri	Tpri_40_r4	vp1_B16	lp6_M22
+B17	Trimethoprim	30	3	3	r3	Tpri	Tpri_30_r3	vp1_B17	lp6_M22
+B18	Trimethoprim	30	3	4	r4	Tpri	Tpri_30_r4	vp1_B18	lp6_M22
+B19	Trimethoprim	20	2	3	r3	Tpri	Tpri_20_r3	vp1_B19	lp6_M22
+B20	Trimethoprim	20	2	4	r4	Tpri	Tpri_20_r4	vp1_B20	lp6_M22
+B21	Trimethoprim	10	1	3	r3	Tpri	Tpri_10_r3	vp1_B21	lp6_M22
+B22	Trimethoprim	10	1	4	r4	Tpri	Tpri_10_r4	vp1_B22	lp6_M22
+B23	Trimethoprim	0	0	3	r3	Tpri	Tpri_0_r3	vp1_B23	lp6_M22
+B24	Trimethoprim	0	0	4	r4	Tpri	Tpri_0_r4	vp1_B24	lp6_M22
+C1	Zinc Pyrithione	150	5	1	r1	Zpyr	Zpyr_150_r1	vp1_C1	lp3_B1
+C2	Zinc Pyrithione	150	5	2	r2	Zpyr	Zpyr_150_r2	vp1_C2	lp3_B1
+C3	Zinc Pyrithione	120	4	1	r1	Zpyr	Zpyr_120_r1	vp1_C3	lp3_B1
+C4	Zinc Pyrithione	120	4	2	r2	Zpyr	Zpyr_120_r2	vp1_C4	lp3_B1
+C5	Zinc Pyrithione	90	3	1	r1	Zpyr	Zpyr_90_r1	vp1_C5	lp3_B1
+C6	Zinc Pyrithione	90	3	2	r2	Zpyr	Zpyr_90_r2	vp1_C6	lp3_B1
+C7	Zinc Pyrithione	60	2	1	r1	Zpyr	Zpyr_60_r1	vp1_C7	lp3_B1
+C8	Zinc Pyrithione	60	2	2	r2	Zpyr	Zpyr_60_r2	vp1_C8	lp3_B1
+C9	Zinc Pyrithione	30	1	1	r1	Zpyr	Zpyr_30_r1	vp1_C9	lp3_B1
+C10	Zinc Pyrithione	30	1	2	r2	Zpyr	Zpyr_30_r2	vp1_C10	lp3_B1
+C11	Zinc Pyrithione	0	0	1	r1	Zpyr	Zpyr_0_r1	vp1_C11	lp3_B1
+C12	Zinc Pyrithione	0	0	2	r2	Zpyr	Zpyr_0_r2	vp1_C12	lp3_B1
+C13	Dicyclomine (hydrochloride)	150	5	1	r1	Dcyc	Dcyc_150_r1	vp1_C13	lp2_N12
+C14	Dicyclomine (hydrochloride)	150	5	2	r2	Dcyc	Dcyc_150_r2	vp1_C14	lp2_N12
+C15	Dicyclomine (hydrochloride)	120	4	1	r1	Dcyc	Dcyc_120_r1	vp1_C15	lp2_N12
+C16	Dicyclomine (hydrochloride)	120	4	2	r2	Dcyc	Dcyc_120_r2	vp1_C16	lp2_N12
+C17	Dicyclomine (hydrochloride)	90	3	1	r1	Dcyc	Dcyc_90_r1	vp1_C17	lp2_N12
+C18	Dicyclomine (hydrochloride)	90	3	2	r2	Dcyc	Dcyc_90_r2	vp1_C18	lp2_N12
+C19	Dicyclomine (hydrochloride)	60	2	1	r1	Dcyc	Dcyc_60_r1	vp1_C19	lp2_N12
+C20	Dicyclomine (hydrochloride)	60	2	2	r2	Dcyc	Dcyc_60_r2	vp1_C20	lp2_N12
+C21	Dicyclomine (hydrochloride)	30	1	1	r1	Dcyc	Dcyc_30_r1	vp1_C21	lp2_N12
+C22	Dicyclomine (hydrochloride)	30	1	2	r2	Dcyc	Dcyc_30_r2	vp1_C22	lp2_N12
+C23	Dicyclomine (hydrochloride)	0	0	1	r1	Dcyc	Dcyc_0_r1	vp1_C23	lp2_N12
+C24	Dicyclomine (hydrochloride)	0	0	2	r2	Dcyc	Dcyc_0_r2	vp1_C24	lp2_N12
+D1	Zinc Pyrithione	150	5	3	r3	Zpyr	Zpyr_150_r3	vp1_D1	lp3_B1
+D2	Zinc Pyrithione	150	5	4	r4	Zpyr	Zpyr_150_r4	vp1_D2	lp3_B1
+D3	Zinc Pyrithione	120	4	3	r3	Zpyr	Zpyr_120_r3	vp1_D3	lp3_B1
+D4	Zinc Pyrithione	120	4	4	r4	Zpyr	Zpyr_120_r4	vp1_D4	lp3_B1
+D5	Zinc Pyrithione	90	3	3	r3	Zpyr	Zpyr_90_r3	vp1_D5	lp3_B1
+D6	Zinc Pyrithione	90	3	4	r4	Zpyr	Zpyr_90_r4	vp1_D6	lp3_B1
+D7	Zinc Pyrithione	60	2	3	r3	Zpyr	Zpyr_60_r3	vp1_D7	lp3_B1
+D8	Zinc Pyrithione	60	2	4	r4	Zpyr	Zpyr_60_r4	vp1_D8	lp3_B1
+D9	Zinc Pyrithione	30	1	3	r3	Zpyr	Zpyr_30_r3	vp1_D9	lp3_B1
+D10	Zinc Pyrithione	30	1	4	r4	Zpyr	Zpyr_30_r4	vp1_D10	lp3_B1
+D11	Zinc Pyrithione	0	0	3	r3	Zpyr	Zpyr_0_r3	vp1_D11	lp3_B1
+D12	Zinc Pyrithione	0	0	4	r4	Zpyr	Zpyr_0_r4	vp1_D12	lp3_B1
+D13	Dicyclomine (hydrochloride)	150	5	3	r3	Dcyc	Dcyc_150_r3	vp1_D13	lp2_N12
+D14	Dicyclomine (hydrochloride)	150	5	4	r4	Dcyc	Dcyc_150_r4	vp1_D14	lp2_N12
+D15	Dicyclomine (hydrochloride)	120	4	3	r3	Dcyc	Dcyc_120_r3	vp1_D15	lp2_N12
+D16	Dicyclomine (hydrochloride)	120	4	4	r4	Dcyc	Dcyc_120_r4	vp1_D16	lp2_N12
+D17	Dicyclomine (hydrochloride)	90	3	3	r3	Dcyc	Dcyc_90_r3	vp1_D17	lp2_N12
+D18	Dicyclomine (hydrochloride)	90	3	4	r4	Dcyc	Dcyc_90_r4	vp1_D18	lp2_N12
+D19	Dicyclomine (hydrochloride)	60	2	3	r3	Dcyc	Dcyc_60_r3	vp1_D19	lp2_N12
+D20	Dicyclomine (hydrochloride)	60	2	4	r4	Dcyc	Dcyc_60_r4	vp1_D20	lp2_N12
+D21	Dicyclomine (hydrochloride)	30	1	3	r3	Dcyc	Dcyc_30_r3	vp1_D21	lp2_N12
+D22	Dicyclomine (hydrochloride)	30	1	4	r4	Dcyc	Dcyc_30_r4	vp1_D22	lp2_N12
+D23	Dicyclomine (hydrochloride)	0	0	3	r3	Dcyc	Dcyc_0_r3	vp1_D23	lp2_N12
+D24	Dicyclomine (hydrochloride)	0	0	4	r4	Dcyc	Dcyc_0_r4	vp1_D24	lp2_N12
+E1	Methylene blue (trihydrate)	100	5	1	r1	Mblu	Mblu_100_r1	vp1_E1	lp1_B17
+E2	Methylene blue (trihydrate)	100	5	2	r2	Mblu	Mblu_100_r2	vp1_E2	lp1_B17
+E3	Methylene blue (trihydrate)	80	4	1	r1	Mblu	Mblu_80_r1	vp1_E3	lp1_B17
+E4	Methylene blue (trihydrate)	80	4	2	r2	Mblu	Mblu_80_r2	vp1_E4	lp1_B17
+E5	Methylene blue (trihydrate)	60	3	1	r1	Mblu	Mblu_60_r1	vp1_E5	lp1_B17
+E6	Methylene blue (trihydrate)	60	3	2	r2	Mblu	Mblu_60_r2	vp1_E6	lp1_B17
+E7	Methylene blue (trihydrate)	40	2	1	r1	Mblu	Mblu_40_r1	vp1_E7	lp1_B17
+E8	Methylene blue (trihydrate)	40	2	2	r2	Mblu	Mblu_40_r2	vp1_E8	lp1_B17
+E9	Methylene blue (trihydrate)	20	1	1	r1	Mblu	Mblu_20_r1	vp1_E9	lp1_B17
+E10	Methylene blue (trihydrate)	20	1	2	r2	Mblu	Mblu_20_r2	vp1_E10	lp1_B17
+E11	Methylene blue (trihydrate)	0	0	1	r1	Mblu	Mblu_0_r1	vp1_E11	lp1_B17
+E12	Methylene blue (trihydrate)	0	0	2	r2	Mblu	Mblu_0_r2	vp1_E12	lp1_B17
+E13	Diiodohydroxyquinolone	150	5	1	r1	Dioq	Dioq_150_r1	vp1_E13	lp5_B6
+E14	Diiodohydroxyquinolone	150	5	2	r2	Dioq	Dioq_150_r2	vp1_E14	lp5_B6
+E15	Diiodohydroxyquinolone	120	4	1	r1	Dioq	Dioq_120_r1	vp1_E15	lp5_B6
+E16	Diiodohydroxyquinolone	120	4	2	r2	Dioq	Dioq_120_r2	vp1_E16	lp5_B6
+E17	Diiodohydroxyquinolone	90	3	1	r1	Dioq	Dioq_90_r1	vp1_E17	lp5_B6
+E18	Diiodohydroxyquinolone	90	3	2	r2	Dioq	Dioq_90_r2	vp1_E18	lp5_B6
+E19	Diiodohydroxyquinolone	60	2	1	r1	Dioq	Dioq_60_r1	vp1_E19	lp5_B6
+E20	Diiodohydroxyquinolone	60	2	2	r2	Dioq	Dioq_60_r2	vp1_E20	lp5_B6
+E21	Diiodohydroxyquinolone	30	1	1	r1	Dioq	Dioq_30_r1	vp1_E21	lp5_B6
+E22	Diiodohydroxyquinolone	30	1	2	r2	Dioq	Dioq_30_r2	vp1_E22	lp5_B6
+E23	Diiodohydroxyquinolone	0	0	1	r1	Dioq	Dioq_0_r1	vp1_E23	lp5_B6
+E24	Diiodohydroxyquinolone	0	0	2	r2	Dioq	Dioq_0_r2	vp1_E24	lp5_B6
+F1	Methylene blue (trihydrate)	100	5	3	r3	Mblu	Mblu_100_r3	vp1_F1	lp1_B17
+F2	Methylene blue (trihydrate)	100	5	4	r4	Mblu	Mblu_100_r4	vp1_F2	lp1_B17
+F3	Methylene blue (trihydrate)	80	4	3	r3	Mblu	Mblu_80_r3	vp1_F3	lp1_B17
+F4	Methylene blue (trihydrate)	80	4	4	r4	Mblu	Mblu_80_r4	vp1_F4	lp1_B17
+F5	Methylene blue (trihydrate)	60	3	3	r3	Mblu	Mblu_60_r3	vp1_F5	lp1_B17
+F6	Methylene blue (trihydrate)	60	3	4	r4	Mblu	Mblu_60_r4	vp1_F6	lp1_B17
+F7	Methylene blue (trihydrate)	40	2	3	r3	Mblu	Mblu_40_r3	vp1_F7	lp1_B17
+F8	Methylene blue (trihydrate)	40	2	4	r4	Mblu	Mblu_40_r4	vp1_F8	lp1_B17
+F9	Methylene blue (trihydrate)	20	1	3	r3	Mblu	Mblu_20_r3	vp1_F9	lp1_B17
+F10	Methylene blue (trihydrate)	20	1	4	r4	Mblu	Mblu_20_r4	vp1_F10	lp1_B17
+F11	Methylene blue (trihydrate)	0	0	3	r3	Mblu	Mblu_0_r3	vp1_F11	lp1_B17
+F12	Methylene blue (trihydrate)	0	0	4	r4	Mblu	Mblu_0_r4	vp1_F12	lp1_B17
+F13	Diiodohydroxyquinolone	150	5	3	r3	Dioq	Dioq_150_r3	vp1_F13	lp5_B6
+F14	Diiodohydroxyquinolone	150	5	4	r4	Dioq	Dioq_150_r4	vp1_F14	lp5_B6
+F15	Diiodohydroxyquinolone	120	4	3	r3	Dioq	Dioq_120_r3	vp1_F15	lp5_B6
+F16	Diiodohydroxyquinolone	120	4	4	r4	Dioq	Dioq_120_r4	vp1_F16	lp5_B6
+F17	Diiodohydroxyquinolone	90	3	3	r3	Dioq	Dioq_90_r3	vp1_F17	lp5_B6
+F18	Diiodohydroxyquinolone	90	3	4	r4	Dioq	Dioq_90_r4	vp1_F18	lp5_B6
+F19	Diiodohydroxyquinolone	60	2	3	r3	Dioq	Dioq_60_r3	vp1_F19	lp5_B6
+F20	Diiodohydroxyquinolone	60	2	4	r4	Dioq	Dioq_60_r4	vp1_F20	lp5_B6
+F21	Diiodohydroxyquinolone	30	1	3	r3	Dioq	Dioq_30_r3	vp1_F21	lp5_B6
+F22	Diiodohydroxyquinolone	30	1	4	r4	Dioq	Dioq_30_r4	vp1_F22	lp5_B6
+F23	Diiodohydroxyquinolone	0	0	3	r3	Dioq	Dioq_0_r3	vp1_F23	lp5_B6
+F24	Diiodohydroxyquinolone	0	0	4	r4	Dioq	Dioq_0_r4	vp1_F24	lp5_B6
+G1	Thioridazine (hydrochloride)	150	5	1	r1	Tzin	Tzin_150_r1	vp1_G1	lp7_O20
+G2	Thioridazine (hydrochloride)	150	5	2	r2	Tzin	Tzin_150_r2	vp1_G2	lp7_O20
+G3	Thioridazine (hydrochloride)	120	4	1	r1	Tzin	Tzin_120_r1	vp1_G3	lp7_O20
+G4	Thioridazine (hydrochloride)	120	4	2	r2	Tzin	Tzin_120_r2	vp1_G4	lp7_O20
+G5	Thioridazine (hydrochloride)	90	3	1	r1	Tzin	Tzin_90_r1	vp1_G5	lp7_O20
+G6	Thioridazine (hydrochloride)	90	3	2	r2	Tzin	Tzin_90_r2	vp1_G6	lp7_O20
+G7	Thioridazine (hydrochloride)	60	2	1	r1	Tzin	Tzin_60_r1	vp1_G7	lp7_O20
+G8	Thioridazine (hydrochloride)	60	2	2	r2	Tzin	Tzin_60_r2	vp1_G8	lp7_O20
+G9	Thioridazine (hydrochloride)	30	1	1	r1	Tzin	Tzin_30_r1	vp1_G9	lp7_O20
+G10	Thioridazine (hydrochloride)	30	1	2	r2	Tzin	Tzin_30_r2	vp1_G10	lp7_O20
+G11	Thioridazine (hydrochloride)	0	0	1	r1	Tzin	Tzin_0_r1	vp1_G11	lp7_O20
+G12	Thioridazine (hydrochloride)	0	0	2	r2	Tzin	Tzin_0_r2	vp1_G12	lp7_O20
+G13	Benzethonium	150	5	1	r1	Bzto	Bzto_150_r1	vp1_G13	lp2_L23
+G14	Benzethonium	150	5	2	r2	Bzto	Bzto_150_r2	vp1_G14	lp2_L23
+G15	Benzethonium	120	4	1	r1	Bzto	Bzto_120_r1	vp1_G15	lp2_L23
+G16	Benzethonium	120	4	2	r2	Bzto	Bzto_120_r2	vp1_G16	lp2_L23
+G17	Benzethonium	90	3	1	r1	Bzto	Bzto_90_r1	vp1_G17	lp2_L23
+G18	Benzethonium	90	3	2	r2	Bzto	Bzto_90_r2	vp1_G18	lp2_L23
+G19	Benzethonium	60	2	1	r1	Bzto	Bzto_60_r1	vp1_G19	lp2_L23
+G20	Benzethonium	60	2	2	r2	Bzto	Bzto_60_r2	vp1_G20	lp2_L23
+G21	Benzethonium	30	1	1	r1	Bzto	Bzto_30_r1	vp1_G21	lp2_L23
+G22	Benzethonium	30	1	2	r2	Bzto	Bzto_30_r2	vp1_G22	lp2_L23
+G23	Benzethonium	0	0	1	r1	Bzto	Bzto_0_r1	vp1_G23	lp2_L23
+G24	Benzethonium	0	0	2	r2	Bzto	Bzto_0_r2	vp1_G24	lp2_L23
+H1	Thioridazine (hydrochloride)	150	5	3	r3	Tzin	Tzin_150_r3	vp1_H1	lp7_O20
+H2	Thioridazine (hydrochloride)	150	5	4	r4	Tzin	Tzin_150_r4	vp1_H2	lp7_O20
+H3	Thioridazine (hydrochloride)	120	4	3	r3	Tzin	Tzin_120_r3	vp1_H3	lp7_O20
+H4	Thioridazine (hydrochloride)	120	4	4	r4	Tzin	Tzin_120_r4	vp1_H4	lp7_O20
+H5	Thioridazine (hydrochloride)	90	3	3	r3	Tzin	Tzin_90_r3	vp1_H5	lp7_O20
+H6	Thioridazine (hydrochloride)	90	3	4	r4	Tzin	Tzin_90_r4	vp1_H6	lp7_O20
+H7	Thioridazine (hydrochloride)	60	2	3	r3	Tzin	Tzin_60_r3	vp1_H7	lp7_O20
+H8	Thioridazine (hydrochloride)	60	2	4	r4	Tzin	Tzin_60_r4	vp1_H8	lp7_O20
+H9	Thioridazine (hydrochloride)	30	1	3	r3	Tzin	Tzin_30_r3	vp1_H9	lp7_O20
+H10	Thioridazine (hydrochloride)	30	1	4	r4	Tzin	Tzin_30_r4	vp1_H10	lp7_O20
+H11	Thioridazine (hydrochloride)	0	0	3	r3	Tzin	Tzin_0_r3	vp1_H11	lp7_O20
+H12	Thioridazine (hydrochloride)	0	0	4	r4	Tzin	Tzin_0_r4	vp1_H12	lp7_O20
+H13	Benzethonium	150	5	3	r3	Bzto	Bzto_150_r3	vp1_H13	lp2_L23
+H14	Benzethonium	150	5	4	r4	Bzto	Bzto_150_r4	vp1_H14	lp2_L23
+H15	Benzethonium	120	4	3	r3	Bzto	Bzto_120_r3	vp1_H15	lp2_L23
+H16	Benzethonium	120	4	4	r4	Bzto	Bzto_120_r4	vp1_H16	lp2_L23
+H17	Benzethonium	90	3	3	r3	Bzto	Bzto_90_r3	vp1_H17	lp2_L23
+H18	Benzethonium	90	3	4	r4	Bzto	Bzto_90_r4	vp1_H18	lp2_L23
+H19	Benzethonium	60	2	3	r3	Bzto	Bzto_60_r3	vp1_H19	lp2_L23
+H20	Benzethonium	60	2	4	r4	Bzto	Bzto_60_r4	vp1_H20	lp2_L23
+H21	Benzethonium	30	1	3	r3	Bzto	Bzto_30_r3	vp1_H21	lp2_L23
+H22	Benzethonium	30	1	4	r4	Bzto	Bzto_30_r4	vp1_H22	lp2_L23
+H23	Benzethonium	0	0	3	r3	Bzto	Bzto_0_r3	vp1_H23	lp2_L23
+H24	Benzethonium	0	0	4	r4	Bzto	Bzto_0_r4	vp1_H24	lp2_L23
+I1	Clindamycin (hydrochloride)	100	5	1	r1	Clin	Clin_100_r1	vp1_I1	lp5_E6
+I2	Clindamycin (hydrochloride)	100	5	2	r2	Clin	Clin_100_r2	vp1_I2	lp5_E6
+I3	Clindamycin (hydrochloride)	80	4	1	r1	Clin	Clin_80_r1	vp1_I3	lp5_E6
+I4	Clindamycin (hydrochloride)	80	4	2	r2	Clin	Clin_80_r2	vp1_I4	lp5_E6
+I5	Clindamycin (hydrochloride)	60	3	1	r1	Clin	Clin_60_r1	vp1_I5	lp5_E6
+I6	Clindamycin (hydrochloride)	60	3	2	r2	Clin	Clin_60_r2	vp1_I6	lp5_E6
+I7	Clindamycin (hydrochloride)	40	2	1	r1	Clin	Clin_40_r1	vp1_I7	lp5_E6
+I8	Clindamycin (hydrochloride)	40	2	2	r2	Clin	Clin_40_r2	vp1_I8	lp5_E6
+I9	Clindamycin (hydrochloride)	20	1	1	r1	Clin	Clin_20_r1	vp1_I9	lp5_E6
+I10	Clindamycin (hydrochloride)	20	1	2	r2	Clin	Clin_20_r2	vp1_I10	lp5_E6
+I11	Clindamycin (hydrochloride)	0	0	1	r1	Clin	Clin_0_r1	vp1_I11	lp5_E6
+I12	Clindamycin (hydrochloride)	0	0	2	r2	Clin	Clin_0_r2	vp1_I12	lp5_E6
+I13	Metixene hydrochloride hydrate	150	5	1	r1	Metx	Metx_150_r1	vp1_I13	lp4_L10
+I14	Metixene hydrochloride hydrate	150	5	2	r2	Metx	Metx_150_r2	vp1_I14	lp4_L10
+I15	Metixene hydrochloride hydrate	120	4	1	r1	Metx	Metx_120_r1	vp1_I15	lp4_L10
+I16	Metixene hydrochloride hydrate	120	4	2	r2	Metx	Metx_120_r2	vp1_I16	lp4_L10
+I17	Metixene hydrochloride hydrate	90	3	1	r1	Metx	Metx_90_r1	vp1_I17	lp4_L10
+I18	Metixene hydrochloride hydrate	90	3	2	r2	Metx	Metx_90_r2	vp1_I18	lp4_L10
+I19	Metixene hydrochloride hydrate	60	2	1	r1	Metx	Metx_60_r1	vp1_I19	lp4_L10
+I20	Metixene hydrochloride hydrate	60	2	2	r2	Metx	Metx_60_r2	vp1_I20	lp4_L10
+I21	Metixene hydrochloride hydrate	30	1	1	r1	Metx	Metx_30_r1	vp1_I21	lp4_L10
+I22	Metixene hydrochloride hydrate	30	1	2	r2	Metx	Metx_30_r2	vp1_I22	lp4_L10
+I23	Metixene hydrochloride hydrate	0	0	1	r1	Metx	Metx_0_r1	vp1_I23	lp4_L10
+I24	Metixene hydrochloride hydrate	0	0	2	r2	Metx	Metx_0_r2	vp1_I24	lp4_L10
+J1	Clindamycin (hydrochloride)	100	5	3	r3	Clin	Clin_100_r3	vp1_J1	lp5_E6
+J2	Clindamycin (hydrochloride)	100	5	4	r4	Clin	Clin_100_r4	vp1_J2	lp5_E6
+J3	Clindamycin (hydrochloride)	80	4	3	r3	Clin	Clin_80_r3	vp1_J3	lp5_E6
+J4	Clindamycin (hydrochloride)	80	4	4	r4	Clin	Clin_80_r4	vp1_J4	lp5_E6
+J5	Clindamycin (hydrochloride)	60	3	3	r3	Clin	Clin_60_r3	vp1_J5	lp5_E6
+J6	Clindamycin (hydrochloride)	60	3	4	r4	Clin	Clin_60_r4	vp1_J6	lp5_E6
+J7	Clindamycin (hydrochloride)	40	2	3	r3	Clin	Clin_40_r3	vp1_J7	lp5_E6
+J8	Clindamycin (hydrochloride)	40	2	4	r4	Clin	Clin_40_r4	vp1_J8	lp5_E6
+J9	Clindamycin (hydrochloride)	20	1	3	r3	Clin	Clin_20_r3	vp1_J9	lp5_E6
+J10	Clindamycin (hydrochloride)	20	1	4	r4	Clin	Clin_20_r4	vp1_J10	lp5_E6
+J11	Clindamycin (hydrochloride)	0	0	3	r3	Clin	Clin_0_r3	vp1_J11	lp5_E6
+J12	Clindamycin (hydrochloride)	0	0	4	r4	Clin	Clin_0_r4	vp1_J12	lp5_E6
+J13	Metixene hydrochloride hydrate	150	5	3	r3	Metx	Metx_150_r3	vp1_J13	lp4_L10
+J14	Metixene hydrochloride hydrate	150	5	4	r4	Metx	Metx_150_r4	vp1_J14	lp4_L10
+J15	Metixene hydrochloride hydrate	120	4	3	r3	Metx	Metx_120_r3	vp1_J15	lp4_L10
+J16	Metixene hydrochloride hydrate	120	4	4	r4	Metx	Metx_120_r4	vp1_J16	lp4_L10
+J17	Metixene hydrochloride hydrate	90	3	3	r3	Metx	Metx_90_r3	vp1_J17	lp4_L10
+J18	Metixene hydrochloride hydrate	90	3	4	r4	Metx	Metx_90_r4	vp1_J18	lp4_L10
+J19	Metixene hydrochloride hydrate	60	2	3	r3	Metx	Metx_60_r3	vp1_J19	lp4_L10
+J20	Metixene hydrochloride hydrate	60	2	4	r4	Metx	Metx_60_r4	vp1_J20	lp4_L10
+J21	Metixene hydrochloride hydrate	30	1	3	r3	Metx	Metx_30_r3	vp1_J21	lp4_L10
+J22	Metixene hydrochloride hydrate	30	1	4	r4	Metx	Metx_30_r4	vp1_J22	lp4_L10
+J23	Metixene hydrochloride hydrate	0	0	3	r3	Metx	Metx_0_r3	vp1_J23	lp4_L10
+J24	Metixene hydrochloride hydrate	0	0	4	r4	Metx	Metx_0_r4	vp1_J24	lp4_L10
+K1	Phenazine (methylsulfate)	150	5	1	r1	Pzin	Pzin_150_r1	vp1_K1	lp4_N4
+K2	Phenazine (methylsulfate)	150	5	2	r2	Pzin	Pzin_150_r2	vp1_K2	lp4_N4
+K3	Phenazine (methylsulfate)	120	4	1	r1	Pzin	Pzin_120_r1	vp1_K3	lp4_N4
+K4	Phenazine (methylsulfate)	120	4	2	r2	Pzin	Pzin_120_r2	vp1_K4	lp4_N4
+K5	Phenazine (methylsulfate)	90	3	1	r1	Pzin	Pzin_90_r1	vp1_K5	lp4_N4
+K6	Phenazine (methylsulfate)	90	3	2	r2	Pzin	Pzin_90_r2	vp1_K6	lp4_N4
+K7	Phenazine (methylsulfate)	60	2	1	r1	Pzin	Pzin_60_r1	vp1_K7	lp4_N4
+K8	Phenazine (methylsulfate)	60	2	2	r2	Pzin	Pzin_60_r2	vp1_K8	lp4_N4
+K9	Phenazine (methylsulfate)	30	1	1	r1	Pzin	Pzin_30_r1	vp1_K9	lp4_N4
+K10	Phenazine (methylsulfate)	30	1	2	r2	Pzin	Pzin_30_r2	vp1_K10	lp4_N4
+K11	Phenazine (methylsulfate)	0	0	1	r1	Pzin	Pzin_0_r1	vp1_K11	lp4_N4
+K12	Phenazine (methylsulfate)	0	0	2	r2	Pzin	Pzin_0_r2	vp1_K12	lp4_N4
+K13	Doxylamine (succinate)	150	5	1	r1	Doxy	Doxy_150_r1	vp1_K13	lp7_A15
+K14	Doxylamine (succinate)	150	5	2	r2	Doxy	Doxy_150_r2	vp1_K14	lp7_A15
+K15	Doxylamine (succinate)	120	4	1	r1	Doxy	Doxy_120_r1	vp1_K15	lp7_A15
+K16	Doxylamine (succinate)	120	4	2	r2	Doxy	Doxy_120_r2	vp1_K16	lp7_A15
+K17	Doxylamine (succinate)	90	3	1	r1	Doxy	Doxy_90_r1	vp1_K17	lp7_A15
+K18	Doxylamine (succinate)	90	3	2	r2	Doxy	Doxy_90_r2	vp1_K18	lp7_A15
+K19	Doxylamine (succinate)	60	2	1	r1	Doxy	Doxy_60_r1	vp1_K19	lp7_A15
+K20	Doxylamine (succinate)	60	2	2	r2	Doxy	Doxy_60_r2	vp1_K20	lp7_A15
+K21	Doxylamine (succinate)	30	1	1	r1	Doxy	Doxy_30_r1	vp1_K21	lp7_A15
+K22	Doxylamine (succinate)	30	1	2	r2	Doxy	Doxy_30_r2	vp1_K22	lp7_A15
+K23	Doxylamine (succinate)	0	0	1	r1	Doxy	Doxy_0_r1	vp1_K23	lp7_A15
+K24	Doxylamine (succinate)	0	0	2	r2	Doxy	Doxy_0_r2	vp1_K24	lp7_A15
+L1	Phenazine (methylsulfate)	150	5	3	r3	Pzin	Pzin_150_r3	vp1_L1	lp4_N4
+L2	Phenazine (methylsulfate)	150	5	4	r4	Pzin	Pzin_150_r4	vp1_L2	lp4_N4
+L3	Phenazine (methylsulfate)	120	4	3	r3	Pzin	Pzin_120_r3	vp1_L3	lp4_N4
+L4	Phenazine (methylsulfate)	120	4	4	r4	Pzin	Pzin_120_r4	vp1_L4	lp4_N4
+L5	Phenazine (methylsulfate)	90	3	3	r3	Pzin	Pzin_90_r3	vp1_L5	lp4_N4
+L6	Phenazine (methylsulfate)	90	3	4	r4	Pzin	Pzin_90_r4	vp1_L6	lp4_N4
+L7	Phenazine (methylsulfate)	60	2	3	r3	Pzin	Pzin_60_r3	vp1_L7	lp4_N4
+L8	Phenazine (methylsulfate)	60	2	4	r4	Pzin	Pzin_60_r4	vp1_L8	lp4_N4
+L9	Phenazine (methylsulfate)	30	1	3	r3	Pzin	Pzin_30_r3	vp1_L9	lp4_N4
+L10	Phenazine (methylsulfate)	30	1	4	r4	Pzin	Pzin_30_r4	vp1_L10	lp4_N4
+L11	Phenazine (methylsulfate)	0	0	3	r3	Pzin	Pzin_0_r3	vp1_L11	lp4_N4
+L12	Phenazine (methylsulfate)	0	0	4	r4	Pzin	Pzin_0_r4	vp1_L12	lp4_N4
+L13	Doxylamine (succinate)	150	5	3	r3	Doxy	Doxy_150_r3	vp1_L13	lp7_A15
+L14	Doxylamine (succinate)	150	5	4	r4	Doxy	Doxy_150_r4	vp1_L14	lp7_A15
+L15	Doxylamine (succinate)	120	4	3	r3	Doxy	Doxy_120_r3	vp1_L15	lp7_A15
+L16	Doxylamine (succinate)	120	4	4	r4	Doxy	Doxy_120_r4	vp1_L16	lp7_A15
+L17	Doxylamine (succinate)	90	3	3	r3	Doxy	Doxy_90_r3	vp1_L17	lp7_A15
+L18	Doxylamine (succinate)	90	3	4	r4	Doxy	Doxy_90_r4	vp1_L18	lp7_A15
+L19	Doxylamine (succinate)	60	2	3	r3	Doxy	Doxy_60_r3	vp1_L19	lp7_A15
+L20	Doxylamine (succinate)	60	2	4	r4	Doxy	Doxy_60_r4	vp1_L20	lp7_A15
+L21	Doxylamine (succinate)	30	1	3	r3	Doxy	Doxy_30_r3	vp1_L21	lp7_A15
+L22	Doxylamine (succinate)	30	1	4	r4	Doxy	Doxy_30_r4	vp1_L22	lp7_A15
+L23	Doxylamine (succinate)	0	0	3	r3	Doxy	Doxy_0_r3	vp1_L23	lp7_A15
+L24	Doxylamine (succinate)	0	0	4	r4	Doxy	Doxy_0_r4	vp1_L24	lp7_A15
+M1	Sulconazole (mononitrate)	150	5	1	r1	Sulc	Sulc_150_r1	vp1_M1	lp7_H1
+M2	Sulconazole (mononitrate)	150	5	2	r2	Sulc	Sulc_150_r2	vp1_M2	lp7_H1
+M3	Sulconazole (mononitrate)	120	4	1	r1	Sulc	Sulc_120_r1	vp1_M3	lp7_H1
+M4	Sulconazole (mononitrate)	120	4	2	r2	Sulc	Sulc_120_r2	vp1_M4	lp7_H1
+M5	Sulconazole (mononitrate)	90	3	1	r1	Sulc	Sulc_90_r1	vp1_M5	lp7_H1
+M6	Sulconazole (mononitrate)	90	3	2	r2	Sulc	Sulc_90_r2	vp1_M6	lp7_H1
+M7	Sulconazole (mononitrate)	60	2	1	r1	Sulc	Sulc_60_r1	vp1_M7	lp7_H1
+M8	Sulconazole (mononitrate)	60	2	2	r2	Sulc	Sulc_60_r2	vp1_M8	lp7_H1
+M9	Sulconazole (mononitrate)	30	1	1	r1	Sulc	Sulc_30_r1	vp1_M9	lp7_H1
+M10	Sulconazole (mononitrate)	30	1	2	r2	Sulc	Sulc_30_r2	vp1_M10	lp7_H1
+M11	Sulconazole (mononitrate)	0	0	1	r1	Sulc	Sulc_0_r1	vp1_M11	lp7_H1
+M12	Sulconazole (mononitrate)	0	0	2	r2	Sulc	Sulc_0_r2	vp1_M12	lp7_H1
+M13	Ciclopirox	150	5	1	r1	Cprx	Cprx_150_r1	vp1_M13	lp7_K3
+M14	Ciclopirox	150	5	2	r2	Cprx	Cprx_150_r2	vp1_M14	lp7_K3
+M15	Ciclopirox	120	4	1	r1	Cprx	Cprx_120_r1	vp1_M15	lp7_K3
+M16	Ciclopirox	120	4	2	r2	Cprx	Cprx_120_r2	vp1_M16	lp7_K3
+M17	Ciclopirox	90	3	1	r1	Cprx	Cprx_90_r1	vp1_M17	lp7_K3
+M18	Ciclopirox	90	3	2	r2	Cprx	Cprx_90_r2	vp1_M18	lp7_K3
+M19	Ciclopirox	60	2	1	r1	Cprx	Cprx_60_r1	vp1_M19	lp7_K3
+M20	Ciclopirox	60	2	2	r2	Cprx	Cprx_60_r2	vp1_M20	lp7_K3
+M21	Ciclopirox	30	1	1	r1	Cprx	Cprx_30_r1	vp1_M21	lp7_K3
+M22	Ciclopirox	30	1	2	r2	Cprx	Cprx_30_r2	vp1_M22	lp7_K3
+M23	Ciclopirox	0	0	1	r1	Cprx	Cprx_0_r1	vp1_M23	lp7_K3
+M24	Ciclopirox	0	0	2	r2	Cprx	Cprx_0_r2	vp1_M24	lp7_K3
+N1	Sulconazole (mononitrate)	150	5	3	r3	Sulc	Sulc_150_r3	vp1_N1	lp7_H1
+N2	Sulconazole (mononitrate)	150	5	4	r4	Sulc	Sulc_150_r4	vp1_N2	lp7_H1
+N3	Sulconazole (mononitrate)	120	4	3	r3	Sulc	Sulc_120_r3	vp1_N3	lp7_H1
+N4	Sulconazole (mononitrate)	120	4	4	r4	Sulc	Sulc_120_r4	vp1_N4	lp7_H1
+N5	Sulconazole (mononitrate)	90	3	3	r3	Sulc	Sulc_90_r3	vp1_N5	lp7_H1
+N6	Sulconazole (mononitrate)	90	3	4	r4	Sulc	Sulc_90_r4	vp1_N6	lp7_H1
+N7	Sulconazole (mononitrate)	60	2	3	r3	Sulc	Sulc_60_r3	vp1_N7	lp7_H1
+N8	Sulconazole (mononitrate)	60	2	4	r4	Sulc	Sulc_60_r4	vp1_N8	lp7_H1
+N9	Sulconazole (mononitrate)	30	1	3	r3	Sulc	Sulc_30_r3	vp1_N9	lp7_H1
+N10	Sulconazole (mononitrate)	30	1	4	r4	Sulc	Sulc_30_r4	vp1_N10	lp7_H1
+N11	Sulconazole (mononitrate)	0	0	3	r3	Sulc	Sulc_0_r3	vp1_N11	lp7_H1
+N12	Sulconazole (mononitrate)	0	0	4	r4	Sulc	Sulc_0_r4	vp1_N12	lp7_H1
+N13	Ciclopirox	150	5	3	r3	Cprx	Cprx_150_r3	vp1_N13	lp7_K3
+N14	Ciclopirox	150	5	4	r4	Cprx	Cprx_150_r4	vp1_N14	lp7_K3
+N15	Ciclopirox	120	4	3	r3	Cprx	Cprx_120_r3	vp1_N15	lp7_K3
+N16	Ciclopirox	120	4	4	r4	Cprx	Cprx_120_r4	vp1_N16	lp7_K3
+N17	Ciclopirox	90	3	3	r3	Cprx	Cprx_90_r3	vp1_N17	lp7_K3
+N18	Ciclopirox	90	3	4	r4	Cprx	Cprx_90_r4	vp1_N18	lp7_K3
+N19	Ciclopirox	60	2	3	r3	Cprx	Cprx_60_r3	vp1_N19	lp7_K3
+N20	Ciclopirox	60	2	4	r4	Cprx	Cprx_60_r4	vp1_N20	lp7_K3
+N21	Ciclopirox	30	1	3	r3	Cprx	Cprx_30_r3	vp1_N21	lp7_K3
+N22	Ciclopirox	30	1	4	r4	Cprx	Cprx_30_r4	vp1_N22	lp7_K3
+N23	Ciclopirox	0	0	3	r3	Cprx	Cprx_0_r3	vp1_N23	lp7_K3
+N24	Ciclopirox	0	0	4	r4	Cprx	Cprx_0_r4	vp1_N24	lp7_K3
+O1	Benfluorex (hydrochloride)	150	5	1	r1	Benf	Benf_150_r1	vp1_O1	lp3_A18
+O2	Benfluorex (hydrochloride)	150	5	2	r2	Benf	Benf_150_r2	vp1_O2	lp3_A18
+O3	Benfluorex (hydrochloride)	120	4	1	r1	Benf	Benf_120_r1	vp1_O3	lp3_A18
+O4	Benfluorex (hydrochloride)	120	4	2	r2	Benf	Benf_120_r2	vp1_O4	lp3_A18
+O5	Benfluorex (hydrochloride)	90	3	1	r1	Benf	Benf_90_r1	vp1_O5	lp3_A18
+O6	Benfluorex (hydrochloride)	90	3	2	r2	Benf	Benf_90_r2	vp1_O6	lp3_A18
+O7	Benfluorex (hydrochloride)	60	2	1	r1	Benf	Benf_60_r1	vp1_O7	lp3_A18
+O8	Benfluorex (hydrochloride)	60	2	2	r2	Benf	Benf_60_r2	vp1_O8	lp3_A18
+O9	Benfluorex (hydrochloride)	30	1	1	r1	Benf	Benf_30_r1	vp1_O9	lp3_A18
+O10	Benfluorex (hydrochloride)	30	1	2	r2	Benf	Benf_30_r2	vp1_O10	lp3_A18
+O11	Benfluorex (hydrochloride)	0	0	1	r1	Benf	Benf_0_r1	vp1_O11	lp3_A18
+O12	Benfluorex (hydrochloride)	0	0	2	r2	Benf	Benf_0_r2	vp1_O12	lp3_A18
+O13	Erythromycin Ethylsuccinate	50	5	1	r1	Eryt	Eryt_50_r1	vp1_O13	lp3_I1
+O14	Erythromycin Ethylsuccinate	50	5	2	r2	Eryt	Eryt_50_r2	vp1_O14	lp3_I1
+O15	Erythromycin Ethylsuccinate	40	4	1	r1	Eryt	Eryt_40_r1	vp1_O15	lp3_I1
+O16	Erythromycin Ethylsuccinate	40	4	2	r2	Eryt	Eryt_40_r2	vp1_O16	lp3_I1
+O17	Erythromycin Ethylsuccinate	30	3	1	r1	Eryt	Eryt_30_r1	vp1_O17	lp3_I1
+O18	Erythromycin Ethylsuccinate	30	3	2	r2	Eryt	Eryt_30_r2	vp1_O18	lp3_I1
+O19	Erythromycin Ethylsuccinate	20	2	1	r1	Eryt	Eryt_20_r1	vp1_O19	lp3_I1
+O20	Erythromycin Ethylsuccinate	20	2	2	r2	Eryt	Eryt_20_r2	vp1_O20	lp3_I1
+O21	Erythromycin Ethylsuccinate	10	1	1	r1	Eryt	Eryt_10_r1	vp1_O21	lp3_I1
+O22	Erythromycin Ethylsuccinate	10	1	2	r2	Eryt	Eryt_10_r2	vp1_O22	lp3_I1
+O23	Erythromycin Ethylsuccinate	0	0	1	r1	Eryt	Eryt_0_r1	vp1_O23	lp3_I1
+O24	Erythromycin Ethylsuccinate	0	0	2	r2	Eryt	Eryt_0_r2	vp1_O24	lp3_I1
+P1	Benfluorex (hydrochloride)	150	5	3	r3	Benf	Benf_150_r3	vp1_P1	lp3_A18
+P2	Benfluorex (hydrochloride)	150	5	4	r4	Benf	Benf_150_r4	vp1_P2	lp3_A18
+P3	Benfluorex (hydrochloride)	120	4	3	r3	Benf	Benf_120_r3	vp1_P3	lp3_A18
+P4	Benfluorex (hydrochloride)	120	4	4	r4	Benf	Benf_120_r4	vp1_P4	lp3_A18
+P5	Benfluorex (hydrochloride)	90	3	3	r3	Benf	Benf_90_r3	vp1_P5	lp3_A18
+P6	Benfluorex (hydrochloride)	90	3	4	r4	Benf	Benf_90_r4	vp1_P6	lp3_A18
+P7	Benfluorex (hydrochloride)	60	2	3	r3	Benf	Benf_60_r3	vp1_P7	lp3_A18
+P8	Benfluorex (hydrochloride)	60	2	4	r4	Benf	Benf_60_r4	vp1_P8	lp3_A18
+P9	Benfluorex (hydrochloride)	30	1	3	r3	Benf	Benf_30_r3	vp1_P9	lp3_A18
+P10	Benfluorex (hydrochloride)	30	1	4	r4	Benf	Benf_30_r4	vp1_P10	lp3_A18
+P11	Benfluorex (hydrochloride)	0	0	3	r3	Benf	Benf_0_r3	vp1_P11	lp3_A18
+P12	Benfluorex (hydrochloride)	0	0	4	r4	Benf	Benf_0_r4	vp1_P12	lp3_A18
+P13	Erythromycin Ethylsuccinate	50	5	3	r3	Eryt	Eryt_50_r3	vp1_P13	lp3_I1
+P14	Erythromycin Ethylsuccinate	50	5	4	r4	Eryt	Eryt_50_r4	vp1_P14	lp3_I1
+P15	Erythromycin Ethylsuccinate	40	4	3	r3	Eryt	Eryt_40_r3	vp1_P15	lp3_I1
+P16	Erythromycin Ethylsuccinate	40	4	4	r4	Eryt	Eryt_40_r4	vp1_P16	lp3_I1
+P17	Erythromycin Ethylsuccinate	30	3	3	r3	Eryt	Eryt_30_r3	vp1_P17	lp3_I1
+P18	Erythromycin Ethylsuccinate	30	3	4	r4	Eryt	Eryt_30_r4	vp1_P18	lp3_I1
+P19	Erythromycin Ethylsuccinate	20	2	3	r3	Eryt	Eryt_20_r3	vp1_P19	lp3_I1
+P20	Erythromycin Ethylsuccinate	20	2	4	r4	Eryt	Eryt_20_r4	vp1_P20	lp3_I1
+P21	Erythromycin Ethylsuccinate	10	1	3	r3	Eryt	Eryt_10_r3	vp1_P21	lp3_I1
+P22	Erythromycin Ethylsuccinate	10	1	4	r4	Eryt	Eryt_10_r4	vp1_P22	lp3_I1
+P23	Erythromycin Ethylsuccinate	0	0	3	r3	Eryt	Eryt_0_r3	vp1_P23	lp3_I1
+P24	Erythromycin Ethylsuccinate	0	0	4	r4	Eryt	Eryt_0_r4	vp1_P24	lp3_I1
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
