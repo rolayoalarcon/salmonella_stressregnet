@@ -1,0 +1,366 @@
+03-estimate_lux
+================
+Compiled at 2025-11-18 20:53:39 UTC
+
+``` r
+here::i_am(paste0(params$name, ".Rmd"), uuid = "4eb39ded-b9ea-43e0-b6e3-fcdc2284fdf4")
+```
+
+The purpose of this document is …
+
+``` r
+library(tidyverse)
+```
+
+    ## ── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+    ## ✔ dplyr     1.1.4     ✔ readr     2.1.5
+    ## ✔ forcats   1.0.0     ✔ stringr   1.5.1
+    ## ✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+    ## ✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+    ## ✔ purrr     1.0.2     
+    ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+    ## ✖ dplyr::filter() masks stats::filter()
+    ## ✖ dplyr::lag()    masks stats::lag()
+    ## ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+``` r
+library(pracma)
+```
+
+    ## 
+    ## Attaching package: 'pracma'
+    ## 
+    ## The following object is masked from 'package:purrr':
+    ## 
+    ##     cross
+
+``` r
+library(foreach)
+```
+
+    ## 
+    ## Attaching package: 'foreach'
+    ## 
+    ## The following objects are masked from 'package:purrr':
+    ## 
+    ##     accumulate, when
+
+``` r
+# create or *empty* the target directory, used to write this file's data: 
+projthis::proj_create_dir_target(params$name, clean = TRUE)
+
+# function to get path to target directory: path_target("sample.csv")
+path_target <- projthis::proj_path_target(params$name)
+
+# function to get path to previous data: path_source("00-import", "sample.csv")
+path_source <- projthis::proj_path_source(params$name)
+```
+
+## Read previous data.
+
+``` r
+filter.metadata <- read_tsv(path_source("02-growth_filtering", "filter_metadata.tsv.gz"), show_col_types = FALSE)
+
+
+od_10h_data <- read_tsv(path_source("02-growth_filtering", "od_10hours.tsv.gz"), show_col_types = FALSE) %>% 
+  rename("experiment_id" = "curve_id") %>% 
+  select(experiment_id, od_10h)
+```
+
+## Read Lux data
+
+``` r
+read_lux_files <- function(file_name, input_directory){
+  
+  # Read file
+  file_path <- file.path(input_directory, file_name)
+  timeseries_df <- read.table(file_path, sep='\t', header = TRUE) 
+  
+  # Add timepoint column
+  timeseries_df <- timeseries_df %>%
+    mutate(timepoint = 1:n())
+  
+  # Add time spent in incubator (in hours)
+  ## Add time 0
+  t0 <- strptime(timeseries_df$Time[1],  format = "%m/%d/%Y %H:%M:%S", tz = "CET")
+  
+  timeseries_df <- timeseries_df %>% 
+    ## Format time-stamps
+    mutate(time_format = strptime(Time,  format = "%m/%d/%Y %H:%M:%S", tz = "CET"),
+           
+           # Time spent in incubator
+           time_spent_h = as.numeric(time_format - t0, units="hours")) %>% 
+    
+    select(-time_format)
+  
+  # Long format
+  timeseries.long <- timeseries_df %>% 
+    pivot_longer(cols = -c(timepoint, Time, time_spent_h), names_to = "well", values_to = "lux")
+  
+  
+  # Add information
+  assay.info <- str_split(file_name, "/")
+  batch_name <- assay.info[[1]][1]
+  
+  plate_id <- assay.info[[1]][2]
+  plate_id <- str_remove(plate_id, "_LUX.tsv.gz")
+  
+  
+  timeseries.long <- timeseries.long %>% 
+    mutate(plate_id = plate_id) %>% 
+    
+    separate(plate_id, sep = "_", into = c("promoter", "lib_plate", "replicate")) %>% 
+  
+  return(timeseries.long)
+}
+```
+
+``` r
+lux_files <- list.files(path_source("00-import/Salmonella/lux_data"), recursive = TRUE)
+# Do not consider validation screen files yet. 
+lux_files <- lux_files[!str_starts(lux_files, "validataion_screen/")] 
+
+# Read files sequentially
+start <- proc.time()[3]
+registerDoSEQ()
+complete_lux <- foreach(fname = lux_files, .combine = "rbind") %dopar% read_lux_files(fname, path_source("00-import/Salmonella/lux_data"))
+end <- proc.time()[3]
+
+end - start / 60
+```
+
+    ##  elapsed 
+    ## 59.00533
+
+Take from third timepoint to be consistent with growth analysis
+
+``` r
+complete_lux <- complete_lux %>% 
+  filter(timepoint >= 3)
+```
+
+``` r
+complete_lux <- complete_lux %>% 
+  unite("experiment_id", c(promoter, lib_plate, well, replicate))
+```
+
+## Estimate AUC.
+
+``` r
+# Closest timepoint to 10h
+complete_lux.10tp <- complete_lux %>% 
+  mutate(diff10 = abs(time_spent_h - 10)) %>% 
+  group_by(experiment_id) %>% 
+  filter(diff10 == min(diff10)) %>% 
+  ungroup() %>% 
+  select(experiment_id, time_spent_h) %>% 
+  rename("tp_10h" = "time_spent_h")
+```
+
+``` r
+lux.auc <- complete_lux %>% 
+  left_join(complete_lux.10tp, by="experiment_id") %>% 
+  filter(time_spent_h <= tp_10h) %>% 
+  
+  group_by(experiment_id) %>% 
+  summarise(lux.auc.10h = trapz(x=time_spent_h, y=lux),
+            lux.auc.10h.tp = trapz(x=timepoint, y=lux)) %>% 
+  ungroup()
+```
+
+## Normalized Lux AUC.
+
+``` r
+lux.auc.complete <- lux.auc %>% 
+  left_join(od_10h_data, by="experiment_id") %>% 
+  mutate(lux.normed = lux.auc.10h / od_10h,
+         log2.lux.normed = log2(lux.normed))
+```
+
+We can then continue with the filtered experiments. We can add an
+additional filter where we know that for feoB, lp1 and lp2 failed.
+
+``` r
+filter.metadata <- filter.metadata %>% 
+  unite("promoter_libplate", c(promoter, libplate), remove=FALSE) %>% 
+  
+  mutate(filter.status = case_when(filter.status != "remove" & promoter_libplate %in% c("PfeoB_lp1", "PfeoB_lp2") ~ "remove",
+                                   TRUE ~ filter.status),
+         
+         filter.reason = case_when(filter.reason == "None" & promoter_libplate %in% c("PfeoB_lp1", "PfeoB_lp2") ~ "failed.reporter",
+                                   TRUE ~ filter.reason))
+
+filter.metadata %>% count(filter.reason)
+```
+
+    ## # A tibble: 7 × 2
+    ##   filter.reason                  n
+    ##   <chr>                      <int>
+    ## 1 None                      153788
+    ## 2 failed.reporter             1486
+    ## 3 killer.compound             5580
+    ## 4 large.od.diff                 48
+    ## 5 low.growth                   268
+    ## 6 nrep_after_growth_filters    106
+    ## 7 odd.growth                     4
+
+``` r
+kept.experiments <- filter.metadata %>% filter(filter.status == "keep") %>% pull(curve_id)
+
+lux.auc.filt <- lux.auc.complete %>% 
+  filter(experiment_id %in% kept.experiments) %>% 
+  
+  separate(experiment_id, c("promoter", "libplate", "well", "replicate"), remove=FALSE) %>% 
+  unite("srn_code", c(libplate, well))
+```
+
+``` r
+normed.lux.p <- lux.auc.filt %>% 
+  unite("promoter_replicate", c(promoter, replicate), remove=FALSE) %>% 
+  
+  ggplot(aes(y=log2.lux.normed, x=promoter_replicate, color=promoter)) +
+  geom_boxplot() +
+  
+  theme_bw() +
+  labs(x="Promoter_Replicate",
+       y=latex2exp::TeX("$log_2$ (Normalized Lux)")) +
+  
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
+        legend.position = "none")
+
+normed.lux.p
+```
+
+![](03-estimate_lux_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
+
+``` r
+ggsave(path_target("log2_normalized_lux_bp.png"), plot= normed.lux.p, dpi = 300, width = 10)
+```
+
+    ## Saving 10 x 5 in image
+
+``` r
+normed.lux.p <- lux.auc.filt %>% 
+  unite("promoter_replicate", c(promoter, replicate), remove=FALSE) %>% 
+  
+  ggplot(aes(y=lux.normed, x=promoter_replicate, color=promoter)) +
+  geom_boxplot() +
+  
+  theme_bw() +
+  labs(x="Promoter_Replicate",
+       y=latex2exp::TeX("Normalized Lux")) +
+  
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
+        legend.position = "none")
+
+ggsave(path_target("normalized_lux_bp.png"), plot= normed.lux.p, dpi = 300, width = 10)
+```
+
+    ## Saving 10 x 5 in image
+
+## Median centering.
+
+To bring all promoters to a similar scale.
+
+``` r
+lux_medians <- lux.auc.filt %>% 
+  unite("promoter_replicate", c(promoter, replicate), sep="_") %>% 
+  
+  group_by(promoter_replicate) %>% 
+  summarise(median.log2.lux.normed = median(log2.lux.normed, na.rm = TRUE))
+
+
+lux.auc.filt <- lux.auc.filt %>% 
+  unite("promoter_replicate", c(promoter, replicate), sep="_", remove=FALSE) %>% 
+  
+  left_join(lux_medians, by="promoter_replicate") %>% 
+  
+  mutate(log2.lux.normed.centered = log2.lux.normed - median.log2.lux.normed) %>% 
+  
+  select(-promoter_replicate)
+
+
+
+normed.lux.p <- lux.auc.filt %>% 
+  unite("promoter_replicate", c(promoter, replicate), remove=FALSE) %>% 
+  
+  ggplot(aes(y=log2.lux.normed.centered, x=promoter_replicate, color=promoter)) +
+  geom_boxplot() +
+  
+  theme_bw() +
+  labs(x="Promoter_Replicate",
+       y=latex2exp::TeX("Centered $log_2$ (Normalized Lux)")) +
+  
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
+        legend.position = "none")
+
+normed.lux.p
+```
+
+![](03-estimate_lux_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+
+``` r
+ggsave(path_target("centered_log2_normalized_lux_bp.png"), plot= normed.lux.p, dpi = 300, width = 10)
+```
+
+    ## Saving 10 x 5 in image
+
+## Comparing replicate values
+
+``` r
+comparison.normed.lux.p <- lux.auc.filt %>% 
+  select(promoter, srn_code, replicate, log2.lux.normed.centered) %>% 
+  
+  pivot_wider(id_cols = c(promoter, srn_code), names_from = replicate, values_from = log2.lux.normed.centered) %>% 
+  
+  
+  
+  ggplot(aes(x=r1, y=r2)) +
+  geom_point(alpha=0.5, size=1) +
+  geom_abline(color="orange", linetype="longdash") +
+  geom_smooth(formula = y~x, method="lm", color="red") +
+  facet_wrap(~promoter) +
+  theme_bw() +
+  
+  labs(x="Replicate 1",
+       y="Replicate 2",
+       title = "Comparison of centered normalized Lux")
+
+comparison.normed.lux.p
+```
+
+![](03-estimate_lux_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
+
+``` r
+ggsave(path_target("comparison_normed_lux.png"), dpi=300, plot=comparison.normed.lux.p)
+```
+
+    ## Saving 7 x 5 in image
+
+## Write files.
+
+``` r
+write_tsv(filter.metadata, path_target("filter_metadata.tsv.gz"))
+write_tsv(lux.auc.complete, path_target("lux_auc_complete.tsv.gz"))
+write_tsv(lux.auc.filt, path_target("lux_auc_filtered_median.tsv.gz"))
+```
+
+## Files written
+
+These files have been written to the target directory,
+`data/03-estimate_lux`:
+
+``` r
+projthis::proj_dir_info(path_target())
+```
+
+    ## # A tibble: 7 × 4
+    ##   path                                type         size modification_time  
+    ##   <fs::path>                          <fct> <fs::bytes> <dttm>             
+    ## 1 centered_log2_normalized_lux_bp.png file      381.93K 2025-11-18 20:54:52
+    ## 2 comparison_normed_lux.png           file      432.06K 2025-11-18 20:54:59
+    ## 3 filter_metadata.tsv.gz              file        1.49M 2025-11-18 20:55:04
+    ## 4 log2_normalized_lux_bp.png          file      354.33K 2025-11-18 20:54:49
+    ## 5 lux_auc_complete.tsv.gz             file        5.31M 2025-11-18 20:55:08
+    ## 6 lux_auc_filtered_median.tsv.gz      file         7.3M 2025-11-18 20:55:13
+    ## 7 normalized_lux_bp.png               file      220.78K 2025-11-18 20:54:50

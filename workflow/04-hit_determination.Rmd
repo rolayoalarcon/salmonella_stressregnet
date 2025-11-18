@@ -1,0 +1,380 @@
+---
+title: "04-hit_determination"
+date: "Compiled at `r format(Sys.time(), '%Y-%m-%d %H:%M:%S', tz = 'UTC')` UTC"
+output: github_document
+params:
+  name: "04-hit_determination" # change if you rename file
+---
+
+```{r here, message=FALSE}
+here::i_am(paste0(params$name, ".Rmd"), uuid = "7f90b0e4-3dbc-4a8f-a2d8-1ac4b37dd6c3")
+```
+
+The purpose of this document is ...
+
+```{r packages}
+library("tidyverse")
+```
+
+```{r directories}
+# create or *empty* the target directory, used to write this file's data: 
+projthis::proj_create_dir_target(params$name, clean = TRUE)
+
+# function to get path to target directory: path_target("sample.csv")
+path_target <- projthis::proj_path_target(params$name)
+
+# function to get path to previous data: path_source("00-import", "sample.csv")
+path_source <- projthis::proj_path_source(params$name)
+```
+
+## Read data. 
+ 
+```{r}
+expression_data <- read_tsv(path_source("03-estimate_lux", "lux_auc_filtered_median.tsv.gz"), show_col_types = FALSE) %>% 
+  
+  mutate(expression_value = log2.lux.normed.centered)
+
+libplate_map <- read_tsv(path_source("00-import/Salmonella", "LibMap.tsv.gz"), show_col_types = FALSE) %>% 
+  mutate(libplate = str_replace(`Library plate`, "LibPlate", "lp"),
+         srn_code = paste(libplate, `New well`, sep="_")) %>% 
+  select(srn_code, `Catalog Number`)
+```
+
+
+
+## Remove DMSO noisy experiments
+```{r}
+## Determine DMSO noisy curves
+dmso_noisy.srn <- libplate_map %>% 
+  filter(`Catalog Number` == "DMSO noisy") %>% 
+  select(srn_code) %>% 
+  unlist()
+  
+
+
+expression_data <- expression_data %>% 
+  filter(!srn_code %in% dmso_noisy.srn)
+```
+
+
+
+## Calculate change w.r.t. EVC
+  
+```{r}
+evc.fc.10h <- expression_data %>% 
+  
+  unite("promoter_replicate", c(promoter, replicate), sep="_") %>% 
+  
+  pivot_wider(id_cols=srn_code, names_from = promoter_replicate, values_from = expression_value) %>% 
+  
+  # Remove cases where EVC3 is missing. This is 6 compounds
+  filter(!is.na(PEVC3_r1) | !is.na(PEVC3_r2)) %>% 
+  
+ # Get an average EVC expression
+  mutate(PEVC3_avg = rowMeans(select(., PEVC3_r1, PEVC3_r2))) %>% 
+  
+  # Prepare dataframe for normalisation
+  select(-c(PEVC3_r1, PEVC3_r2)) %>% 
+  column_to_rownames("srn_code") %>%
+    
+  # Normalise with respect to EVC average
+  mutate(across(.cols = everything(), .fns = ~. - PEVC3_avg)) %>% 
+    
+  # Convert back to long format
+  select(-PEVC3_avg) %>% 
+  rownames_to_column("srn_code") %>% 
+  
+  
+  pivot_longer(cols=-srn_code, names_to = "promoter_replicate", values_to = "log.evcfc") %>% 
+  filter(!is.na(log.evcfc))
+```
+
+
+
+## Test for normality. 
+ 
+```{r}
+promoter.normtest <- function(promrep_str, express.val.str, auc_df){
+  
+  # Gather the relevant information
+  promrep.aucs <- auc_df %>% 
+    filter(promoter_replicate == promrep_str) %>% 
+    select(all_of(express.val.str)) %>%
+    unlist()
+  
+  # Prepare output
+  r1.df <- data.frame(promoter_replicate=promrep_str,
+                      shapiro.pval=shapiro.test(promrep.aucs)$p.value,
+                      lillie.pval=nortest::lillie.test(promrep.aucs)$p.value)
+  return(r1.df)
+  }
+```
+
+Gather DMSO values. 
+ 
+```{r}
+dmso.evcfc <- evc.fc.10h %>% 
+  left_join(libplate_map %>% select(srn_code, `Catalog Number`)) %>% 
+  filter(`Catalog Number` == "DMSO")
+```
+
+
+```{r}
+dmso.evcfc %>% 
+  group_by(promoter_replicate) %>% 
+  summarise(n_dmso_wells = n())
+```
+
+
+
+```{r}
+salm.normtest.pvals <- bind_rows(lapply(unique(dmso.evcfc$promoter_replicate), promoter.normtest, express.val.str="log.evcfc", auc_df=dmso.evcfc)) %>% 
+  
+  mutate(shapiro.pval.adj = p.adjust(shapiro.pval, method = "BH"),
+         lillie.pval.adj = p.adjust(lillie.pval, method = "BH")) %>% 
+  
+  separate(promoter_replicate, into=c("promoter", "replicate"), sep="_") %>%
+  mutate(replicate = str_split(replicate, "r", simplify = TRUE)[,2],
+         replicate = as.numeric(replicate),
+         replicate = factor(replicate, levels=unique(sort(replicate))))
+
+
+
+salm.normtest.pvals.long <- salm.normtest.pvals %>% 
+  pivot_wider(names_from = replicate, values_from = c(shapiro.pval.adj, lillie.pval.adj), id_cols = promoter) %>% 
+  pivot_longer(cols=-promoter, names_to="test_replicate", values_to="adj.pval") %>% 
+  mutate(decision = if_else(adj.pval < 0.05, "Not normal", "Normal"),
+         decision = if_else(is.na(adj.pval), "NA", decision),
+         decision = factor(decision, levels=c("Normal", "Not normal", "NA")),
+         
+         pval_label = if_else(is.na(adj.pval), "NA", as.character(round(adj.pval, 2)))) %>% 
+  
+  separate(test_replicate, into=c("test", "replicate"), sep="_") %>%
+  mutate(replicate = factor(replicate, levels=unique(sort(replicate))))
+```
+
+```{r}
+lillie.salm.g <- salm.normtest.pvals.long %>% 
+  mutate(promoter = case_when(promoter == "PEVC" ~ "EVC1",
+                              promoter == "PEVC2" ~ "EVC2",
+                              promoter == "PEVC3" ~ "EVC3",
+                              promoter == "PmarR" ~ "PmarRAB",
+                              TRUE ~ promoter),
+         promoter = factor(promoter, levels = rev(sort(unique(promoter))))) %>%
+  filter(test == "lillie.pval.adj") %>% 
+  
+   ggplot(aes(x=replicate, y=promoter, fill = decision)) +
+  geom_tile(color="black") +
+  geom_text(aes(label = pval_label), size=3) +
+  
+  scale_fill_manual(values=c(alpha("#CC79A7", 0.95), alpha("#b3b3b3", 0.65)))+
+
+  theme_minimal() +
+  labs(title = "Lilliefors test: adj. p-values",
+       fill="Decision",
+       x="Replicate",
+       y="Promoter") +
+  theme(legend.position = "right",
+        
+        legend.key.size = unit(0.3, "cm"))
+
+lillie.salm.g
+
+ggsave(path_target("lillie_dmso_tests.png"), plot=lillie.salm.g, dpi=300, width = 5)
+```
+
+
+```{r}
+dnorm_promrep <- function(promrep_str, express.val.str, auc_df){
+  
+  # Gather the relevant information
+  promrep.aucs <- auc_df %>% 
+    filter(promoter_replicate == promrep_str) %>% 
+    select(all_of(express.val.str)) %>%
+    unlist()
+  
+  # Prepare h
+  h <- hist(promrep.aucs, breaks = 30, density = 10)
+  
+  xfit <- seq(min(promrep.aucs), max(promrep.aucs), length = 40) 
+  
+  yfit <- dnorm(xfit, mean = mean(promrep.aucs), sd = sd(promrep.aucs)) 
+  yfit <- yfit * diff(h$mids[1:2]) * length(promrep.aucs) 
+  
+  # Prepare output
+  df.out <- data.frame(promoter_replicate=promrep_str,
+                      x=xfit,
+                      y=yfit)
+  
+  return(df.out)
+}
+
+
+salm.normtest.dnorm <- bind_rows(lapply(unique(dmso.evcfc$promoter_replicate), dnorm_promrep, express.val.str="log.evcfc", auc_df=dmso.evcfc)) %>% 
+  
+  separate(promoter_replicate, into=c("promoter", "replicate"), sep="_") %>%
+  mutate(replicate = str_split(replicate, "r", simplify = TRUE)[,2],
+         replicate = as.numeric(replicate),
+         replicate = factor(replicate, levels=unique(sort(replicate))))
+```
+
+```{r}
+df_ <- dmso.evcfc %>% 
+  separate(promoter_replicate, into=c("promoter", "replicate"), sep="_") %>% 
+  mutate(replicate = str_split(replicate, "r", simplify = TRUE)[,2],
+         replicate = as.numeric(replicate),
+         replicate = factor(replicate, levels=unique(sort(replicate))))
+  
+
+distrib.dens.salm.g <- ggplot(df_) +
+  geom_histogram(aes(x=log.evcfc, fill=replicate), alpha=0.2, bins = 50, color="black",
+                 position = "identity", linewidth=0.01) +
+  geom_line(data=salm.normtest.dnorm, aes(x, y, color=replicate), linewidth=0.5) +
+  
+  facet_wrap(~promoter, scales="free_y") +
+  theme_bw() +
+  
+  labs(x=latex2exp::TeX("$log_2$ Norm. Lux $- log_2$ average EVC"),
+       y = "Count \\ Density") +
+  theme(text=element_text(size=7),
+        axis.text = element_text(size=5),
+        axis.text.x = element_text(size=5, angle = 30, hjust = 1),
+        legend.position = "bottom",
+        legend.key.size = unit(0.1, "cm")) +
+  labs(color="Replicate",
+       fill = "Replicate",
+       title = "DMSO experiments")
+distrib.dens.salm.g
+
+ggsave(plot = distrib.dens.salm.g, filename = path_target("dmso_distribution.pdf"), dpi=300,
+       width = 20, height = 12, units="cm")
+```
+
+## Pvalue calculation 
+ 
+```{r}
+dmso.params <- dmso.evcfc %>% 
+  group_by(promoter_replicate) %>% 
+  summarise(dmso.mean = mean(log.evcfc),
+            dmso.stdv = sd(log.evcfc))
+
+pvalues.df <- evc.fc.10h %>% 
+  left_join(dmso.params) %>% 
+  
+  mutate(zscore = (log.evcfc-dmso.mean)/dmso.stdv,
+         pvalue = 2 * pnorm(q=abs(zscore), mean=0, sd=1, lower.tail=FALSE)) %>% 
+  separate(promoter_replicate, c("promoter", "replicate"), remove = FALSE)
+```
+```{r}
+pval.histogram <- pvalues.df %>% 
+  
+   mutate(promoter = case_when(promoter == "PEVC" ~ "EVC1",
+                              promoter == "PEVC2" ~ "EVC2",
+                              promoter == "PEVC3" ~ "EVC3",
+                              promoter == "PmarR" ~ "PmarRAB",
+                              TRUE ~ promoter)) %>% 
+  
+  ggplot(aes(x=pvalue, fill=replicate)) +
+  geom_histogram(binwidth = 0.01, position="identity", alpha=0.5) +
+  facet_wrap(~promoter, scales = "free_y") +
+  
+    theme_bw() +
+  
+  theme(text = element_text(size=6),
+        legend.position = "right") +
+
+  labs(x="p-value",
+       y="Count",
+       fill="Replicate")
+
+pval.histogram
+
+ggsave(plot = pval.histogram, filename = path_target("pvalue_histogram.pdf"), dpi=300,
+       width = 18, height = 12, units="cm")
+```
+  
+## Hit determination. 
+
+```{r}
+pvalues_adj.df <- pvalues.df %>% 
+  
+  group_by(promoter, srn_code) %>% 
+  slice_max(pvalue, n=1) %>% 
+  ungroup() %>% 
+  
+  group_by(promoter) %>% 
+  mutate(pvalue.adj = p.adjust(pvalue, method = "BH")) %>% 
+  ungroup()
+```
+
+```{r}
+hit_table <- pvalues_adj.df %>% 
+   mutate(hit = case_when(pvalue.adj < 0.01 & zscore > 0 ~ "Upregulated",
+                                pvalue.adj < 0.01 & zscore < 0 ~ "Downregulated",
+                                TRUE ~ "Not DE"))
+```
+
+```{r}
+hit_table %>% 
+  filter(hit != "Not DE") %>% 
+
+  count(hit) %>% 
+  knitr::kable()
+```
+
+```{r}
+hit_table %>% 
+  filter(hit != "Not DE") %>% 
+  group_by(promoter) %>% 
+  
+  count(hit) %>% 
+  knitr::kable()
+```
+  
+## Additional data. 
+ 
+```{r}
+chemical_information <- read_tsv(path_source("00-import", "chemical_library/chemical_library.tsv.gz"), show_col_types = FALSE)
+chemical_information <- chemical_information %>% 
+  select(srn_code, ProductName, antibiotic,chemtype_mce,ATC_level1,ATC_level2)
+
+
+hit_table.metadata <- hit_table %>% 
+  select(-c(promoter_replicate, replicate)) %>% 
+  
+  left_join(chemical_information, by="srn_code")
+```
+
+
+```{r}
+hit_table.metadata %>% 
+  filter(hit != "Not DE",
+         promoter == "PvirK") %>% 
+  arrange(hit)
+```
+
+
+## Volcano plot. 
+ 
+```{r}
+ggplot(hit_table.metadata, aes(x=zscore, y=-log10(pvalue.adj), color=zscore)) +
+  
+  geom_point(size=1) +
+  
+  theme_bw()
+```
+
+## Write files. 
+ 
+```{r}
+write_tsv(hit_table.metadata, path_target("hit_table.tsv.gz"))
+```
+
+
+## Files written
+
+These files have been written to the target directory, ```r paste0("data/", params$name)```:
+
+```{r list-files-target}
+projthis::proj_dir_info(path_target())
+```

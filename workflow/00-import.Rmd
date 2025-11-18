@@ -200,7 +200,6 @@ maier_files <- file.path(MAIER_INPUT, list.files(MAIER_INPUT))
 file.copy(maier_files, path_target("Maier_2018"))
 ```
 
-  
 
 ## Files written
 

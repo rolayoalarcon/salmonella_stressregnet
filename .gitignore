@@ -1,1 +1,8 @@
 .Rproj.user
+.Rhistory
+.Rdata
+.httr-oauth
+.DS_Store
+.quarto
+workflow/tmp/**
+workflow/logdir/**
