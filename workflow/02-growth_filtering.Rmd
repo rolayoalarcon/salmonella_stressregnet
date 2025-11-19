@@ -320,7 +320,7 @@ filter.metadata <- filter.metadata %>%
          filter.reason = case_when(filter.reason == "None" &  promoter_compound %in% remove.promchem ~ "large.od.diff",
                                    TRUE ~ filter.reason))
 
-filter.metadata %>% count(filter.reason)
+filter.metadata %>% count(filter.reason) %>% knitr::kable()
 ```
 
 ```{r}

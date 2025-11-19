@@ -1,6 +1,6 @@
 04-hit_determination
 ================
-Compiled at 2025-11-18 22:16:34 UTC
+Compiled at 2025-11-19 01:05:55 UTC
 
 ``` r
 here::i_am(paste0(params$name, ".Rmd"), uuid = "7f90b0e4-3dbc-4a8f-a2d8-1ac4b37dd6c3")
@@ -24,6 +24,10 @@ library("tidyverse")
     ## ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
 
 ``` r
+library(RColorBrewer)
+```
+
+``` r
 # create or *empty* the target directory, used to write this file's data: 
 projthis::proj_create_dir_target(params$name, clean = TRUE)
 
@@ -45,7 +49,24 @@ libplate_map <- read_tsv(path_source("00-import/Salmonella", "LibMap.tsv.gz"), s
   mutate(libplate = str_replace(`Library plate`, "LibPlate", "lp"),
          srn_code = paste(libplate, `New well`, sep="_")) %>% 
   select(srn_code, `Catalog Number`)
+
+
+filter.metadata <- read_tsv(path_source("03-estimate_lux", "filter_metadata.tsv.gz"), show_col_types = FALSE)
 ```
+
+``` r
+filter.metadata %>% 
+  left_join(libplate_map) %>% 
+  filter(!`Catalog Number` %in% c("DMSO", "DMSO noisy")) %>% 
+  
+  select(srn_code, promoter) %>% 
+  distinct() %>% 
+  nrow()
+```
+
+    ## Joining with `by = join_by(srn_code)`
+
+    ## [1] 72450
 
 ## Remove DMSO noisy experiments
 
@@ -197,7 +218,7 @@ lillie.salm.g <- salm.normtest.pvals.long %>%
 lillie.salm.g
 ```
 
-![](04-hit_determination_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->
+![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
 
 ``` r
 ggsave(path_target("lillie_dmso_tests.png"), plot=lillie.salm.g, dpi=300, width = 5)
@@ -239,7 +260,7 @@ salm.normtest.dnorm <- bind_rows(lapply(unique(dmso.evcfc$promoter_replicate), d
          replicate = factor(replicate, levels=unique(sort(replicate))))
 ```
 
-![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-2.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-3.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-4.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-5.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-6.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-7.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-8.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-9.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-10.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-11.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-12.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-13.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-14.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-15.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-16.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-17.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-18.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-19.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-20.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-21.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-22.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-23.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-24.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-25.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-26.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-27.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-28.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-29.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-30.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-31.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-32.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-33.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-34.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-35.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-36.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-37.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-38.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-39.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-40.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-41.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-42.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-43.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-44.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-45.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-46.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-47.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-48.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-49.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-50.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-51.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-52.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-53.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-54.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-55.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-56.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-57.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-9-58.png)<!-- -->
+![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-2.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-3.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-4.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-5.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-6.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-7.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-8.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-9.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-10.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-11.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-12.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-13.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-14.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-15.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-16.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-17.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-18.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-19.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-20.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-21.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-22.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-23.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-24.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-25.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-26.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-27.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-28.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-29.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-30.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-31.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-32.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-33.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-34.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-35.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-36.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-37.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-38.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-39.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-40.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-41.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-42.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-43.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-44.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-45.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-46.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-47.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-48.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-49.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-50.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-51.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-52.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-53.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-54.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-55.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-56.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-57.png)<!-- -->![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-58.png)<!-- -->
 
 ``` r
 df_ <- dmso.evcfc %>% 
@@ -270,7 +291,7 @@ distrib.dens.salm.g <- ggplot(df_) +
 distrib.dens.salm.g
 ```
 
-![](04-hit_determination_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+![](04-hit_determination_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
 
 ``` r
 ggsave(plot = distrib.dens.salm.g, filename = path_target("dmso_distribution.pdf"), dpi=300,
@@ -320,7 +341,7 @@ pval.histogram <- pvalues.df %>%
 pval.histogram
 ```
 
-![](04-hit_determination_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->
+![](04-hit_determination_files/figure-gfm/unnamed-chunk-13-1.png)<!-- -->
 
 ``` r
 ggsave(plot = pval.histogram, filename = path_target("pvalue_histogram.pdf"), dpi=300,
@@ -473,6 +494,78 @@ hit_table.metadata %>%
     ## # ℹ 6 more variables: hit <chr>, ProductName <chr>, antibiotic <lgl>,
     ## #   chemtype_mce <chr>, ATC_level1 <chr>, ATC_level2 <chr>
 
+## Heatmap.
+
+``` r
+df_mat <- hit_table.metadata %>% 
+  filter(hit %in% c("Upregulated", "Not DE")) %>% 
+  mutate(hit_lab = if_else(hit == "Upregulated", 1, 0)) %>% 
+  pivot_wider(id_cols = promoter, names_from = srn_code, values_from = hit_lab, values_fill = 0) %>% 
+  
+  column_to_rownames("promoter") %>% 
+  as.matrix()
+
+
+
+pheatmap::pheatmap(df_mat[,colSums(df_mat) > 0], 
+         cluster_rows = TRUE, 
+         cluster_cols = TRUE,
+         
+         legend = FALSE,
+         
+         clustering_distance_rows = "binary",
+         clustering_distance_cols = "binary",
+         
+         show_colnames = FALSE,
+         border_color = "black",
+         #cellwidth = 3,
+         
+         fontsize_row=8,
+         color=colorRampPalette(c("#f9f9f9", "#b31529"))(25),
+         filename = path_target("salm_hit_heatmap.pdf"),
+         width = 6, height = 3.8)
+```
+
+``` r
+df_mat <- hit_table.metadata %>% 
+  filter(promoter != "PmgrR") %>% 
+  pivot_wider(id_cols = promoter, names_from = srn_code, values_from = zscore, values_fill = 0) %>% 
+  
+  column_to_rownames("promoter") %>% 
+  as.matrix()
+
+
+# Find the maximum absolute value to center the scale
+max_val <- max(abs(df_mat)) * 0.15
+
+# Generate a sequence of breaks from -max_val to +max_val
+# We create 100 steps for a smooth color transition
+my_breaks <- seq(-max_val, max_val, length.out = 101)
+
+# Create a color palette
+# We use RColorBrewer's "RdBu" (Red-White-Blue) palette and reverse it
+# so that blue is negative, white is zero, and red is positive.
+my_color_palette <- colorRampPalette(rev(brewer.pal(n = 9, name = "RdBu")))(100)
+
+
+pheatmap::pheatmap(df_mat,
+                   # Clustering options
+  cluster_rows = TRUE, # Do NOT cluster genes (rows)
+  cluster_cols = TRUE,  # Cluster compounds (columns)
+  
+  clustering_distance_rows = "correlation",
+  clustering_distance_cols = "correlation",
+  # Label options
+  show_rownames = TRUE,  # Show gene names (rows)
+  show_colnames = FALSE, # Hide compound names (columns)
+  fontsize_row = 8,
+  filename = path_target("salm_zscore_heatmap.pdf"),
+         width = 6, height = 3.8,
+  # Color and scale options
+  color = my_color_palette, # Apply our custom palette
+  breaks = my_breaks)         # Apply our custom breaks centered at 0)
+```
+
 ## Volcano plot.
 
 ``` r
@@ -483,7 +576,7 @@ ggplot(hit_table.metadata, aes(x=zscore, y=-log10(pvalue.adj), color=zscore)) +
   theme_bw()
 ```
 
-![](04-hit_determination_files/figure-gfm/unnamed-chunk-19-1.png)<!-- -->
+![](04-hit_determination_files/figure-gfm/unnamed-chunk-22-1.png)<!-- -->
 
 ## Write files.
 
@@ -500,10 +593,12 @@ These files have been written to the target directory,
 projthis::proj_dir_info(path_target())
 ```
 
-    ## # A tibble: 4 × 4
-    ##   path                  type         size modification_time  
-    ##   <fs::path>            <fct> <fs::bytes> <dttm>             
-    ## 1 dmso_distribution.pdf file        33.9K 2025-11-18 22:16:44
-    ## 2 hit_table.tsv.gz      file        3.47M 2025-11-18 22:17:05
-    ## 3 lillie_dmso_tests.png file      209.76K 2025-11-18 22:16:37
-    ## 4 pvalue_histogram.pdf  file       39.92K 2025-11-18 22:16:49
+    ## # A tibble: 6 × 4
+    ##   path                    type         size modification_time  
+    ##   <fs::path>              <fct> <fs::bytes> <dttm>             
+    ## 1 dmso_distribution.pdf   file        33.9K 2025-11-19 01:06:05
+    ## 2 hit_table.tsv.gz        file        3.47M 2025-11-19 01:06:29
+    ## 3 lillie_dmso_tests.png   file      209.76K 2025-11-19 01:05:59
+    ## 4 pvalue_histogram.pdf    file       39.92K 2025-11-19 01:06:11
+    ## 5 salm_hit_heatmap.pdf    file       28.38K 2025-11-19 01:06:21
+    ## 6 salm_zscore_heatmap.pdf file      369.45K 2025-11-19 01:06:23

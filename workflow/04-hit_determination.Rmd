@@ -14,6 +14,7 @@ The purpose of this document is ...
 
 ```{r packages}
 library("tidyverse")
+library(RColorBrewer)
 ```
 
 ```{r directories}
@@ -38,7 +39,23 @@ libplate_map <- read_tsv(path_source("00-import/Salmonella", "LibMap.tsv.gz"), s
   mutate(libplate = str_replace(`Library plate`, "LibPlate", "lp"),
          srn_code = paste(libplate, `New well`, sep="_")) %>% 
   select(srn_code, `Catalog Number`)
+
+
+filter.metadata <- read_tsv(path_source("03-estimate_lux", "filter_metadata.tsv.gz"), show_col_types = FALSE)
 ```
+
+
+
+```{r}
+filter.metadata %>% 
+  left_join(libplate_map) %>% 
+  filter(!`Catalog Number` %in% c("DMSO", "DMSO noisy")) %>% 
+  
+  select(srn_code, promoter) %>% 
+  distinct() %>% 
+  nrow()
+```
+
 
 
 
@@ -352,6 +369,82 @@ hit_table.metadata %>%
          promoter == "PvirK") %>% 
   arrange(hit)
 ```
+
+## Heatmap. 
+
+
+```{r}
+df_mat <- hit_table.metadata %>% 
+  filter(hit %in% c("Upregulated", "Not DE")) %>% 
+  mutate(hit_lab = if_else(hit == "Upregulated", 1, 0)) %>% 
+  pivot_wider(id_cols = promoter, names_from = srn_code, values_from = hit_lab, values_fill = 0) %>% 
+  
+  column_to_rownames("promoter") %>% 
+  as.matrix()
+
+
+
+pheatmap::pheatmap(df_mat[,colSums(df_mat) > 0], 
+         cluster_rows = TRUE, 
+         cluster_cols = TRUE,
+         
+         legend = FALSE,
+         
+         clustering_distance_rows = "binary",
+         clustering_distance_cols = "binary",
+         
+         show_colnames = FALSE,
+         border_color = "black",
+         #cellwidth = 3,
+         
+         fontsize_row=8,
+         color=colorRampPalette(c("#f9f9f9", "#b31529"))(25),
+         filename = path_target("salm_hit_heatmap.pdf"),
+         width = 6, height = 3.8)
+  
+```
+
+  
+```{r}
+df_mat <- hit_table.metadata %>% 
+  filter(promoter != "PmgrR") %>% 
+  pivot_wider(id_cols = promoter, names_from = srn_code, values_from = zscore, values_fill = 0) %>% 
+  
+  column_to_rownames("promoter") %>% 
+  as.matrix()
+
+
+# Find the maximum absolute value to center the scale
+max_val <- max(abs(df_mat)) * 0.15
+
+# Generate a sequence of breaks from -max_val to +max_val
+# We create 100 steps for a smooth color transition
+my_breaks <- seq(-max_val, max_val, length.out = 101)
+
+# Create a color palette
+# We use RColorBrewer's "RdBu" (Red-White-Blue) palette and reverse it
+# so that blue is negative, white is zero, and red is positive.
+my_color_palette <- colorRampPalette(rev(brewer.pal(n = 9, name = "RdBu")))(100)
+
+
+pheatmap::pheatmap(df_mat,
+                   # Clustering options
+  cluster_rows = TRUE, # Do NOT cluster genes (rows)
+  cluster_cols = TRUE,  # Cluster compounds (columns)
+  
+  clustering_distance_rows = "correlation",
+  clustering_distance_cols = "correlation",
+  # Label options
+  show_rownames = TRUE,  # Show gene names (rows)
+  show_colnames = FALSE, # Hide compound names (columns)
+  fontsize_row = 8,
+  filename = path_target("salm_zscore_heatmap.pdf"),
+         width = 6, height = 3.8,
+  # Color and scale options
+  color = my_color_palette, # Apply our custom palette
+  breaks = my_breaks)         # Apply our custom breaks centered at 0)
+```
+
 
 
 ## Volcano plot. 

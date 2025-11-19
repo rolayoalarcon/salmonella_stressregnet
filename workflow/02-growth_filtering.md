@@ -1,6 +1,6 @@
 02-growth_filtering
 ================
-Compiled at 2025-11-18 19:30:08 UTC
+Compiled at 2025-11-18 23:44:09 UTC
 
 ``` r
 here::i_am(paste0(params$name, ".Rmd"), uuid = "cddd9485-e271-4bd8-ba61-563b2e390f26")
@@ -390,16 +390,24 @@ filter.metadata <- filter.metadata %>%
          filter.reason = case_when(filter.reason == "None" &  promoter_compound %in% remove.promchem ~ "large.od.diff",
                                    TRUE ~ filter.reason))
 
-filter.metadata %>% count(filter.reason)
+filter.metadata %>% count(filter.reason) %>% knitr::kable()
 ```
 
-    ##               filter.reason      n
-    ## 1                      None 155274
-    ## 2           killer.compound   5580
-    ## 3             large.od.diff     48
-    ## 4                low.growth    268
-    ## 5 nrep_after_growth_filters    106
-    ## 6                odd.growth      4
+    ## Warning: 'xfun::attr()' is deprecated.
+    ## Use 'xfun::attr2()' instead.
+    ## See help("Deprecated")
+    ## Warning: 'xfun::attr()' is deprecated.
+    ## Use 'xfun::attr2()' instead.
+    ## See help("Deprecated")
+
+| filter.reason             |      n |
+|:--------------------------|-------:|
+| None                      | 155274 |
+| killer.compound           |   5580 |
+| large.od.diff             |     48 |
+| low.growth                |    268 |
+| nrep_after_growth_filters |    106 |
+| odd.growth                |      4 |
 
 ``` r
 filter.metadata %>% dim()
@@ -426,10 +434,10 @@ projthis::proj_dir_info(path_target())
     ## # A tibble: 7 × 4
     ##   path                   type         size modification_time  
     ##   <fs::path>             <fct> <fs::bytes> <dttm>             
-    ## 1 example_diffOD.png     file       83.61K 2025-11-18 19:30:59
-    ## 2 filter_histogram.png   file        49.5K 2025-11-18 19:30:38
-    ## 3 filter_metadata.tsv.gz file        1.41M 2025-11-18 19:31:03
-    ## 4 od_10hours.tsv.gz      file      729.21K 2025-11-18 19:31:07
-    ## 5 od_comparison.png      file      570.44K 2025-11-18 19:30:51
-    ## 6 od_removal.png         file      479.56K 2025-11-18 19:30:58
-    ## 7 odd_curves.png         file      114.04K 2025-11-18 19:30:42
+    ## 1 example_diffOD.png     file       83.61K 2025-11-18 23:45:01
+    ## 2 filter_histogram.png   file        49.5K 2025-11-18 23:44:40
+    ## 3 filter_metadata.tsv.gz file        1.41M 2025-11-18 23:45:05
+    ## 4 od_10hours.tsv.gz      file      729.21K 2025-11-18 23:45:09
+    ## 5 od_comparison.png      file      570.44K 2025-11-18 23:44:53
+    ## 6 od_removal.png         file      479.56K 2025-11-18 23:44:59
+    ## 7 odd_curves.png         file      114.04K 2025-11-18 23:44:44
